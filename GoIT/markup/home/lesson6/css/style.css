@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-	width: 1000px;
+	width: 954px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 45px 0 45px;
@@ -13,10 +13,18 @@
 	position: relative;
 }
 
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 100%;
+}
+
 /*HEADER*/
 
 .header {
-	width: 100%;
+	width: 954px;
 	height: 315px;
 	margin: 18px 0 0 0;
 	position: relative;
@@ -24,7 +32,7 @@
 
 .phone {
 	float: left;
-	padding: 10px 0 0 5px;
+	padding: 5px 18px 6px 7px
 }
 
 .phone span {
@@ -35,8 +43,8 @@
 
 .registration {
 	float: left;
-	widows: 500px;
-	height: 24px;
+	width: 495px;
+	height: 21px;
 	padding: 5px 0 0 0;
 	background: #fff url(../img/registration.png) 0 0 no-repeat;
 }
@@ -51,6 +59,41 @@
 	float: left;
 	width: 113px;
 	height: 14px;
+}
+
+
+.main-menu-center {
+	width: 912px;
+	height: 34px;
+    background: #207cca; /* Old browsers */
+    background: -moz-linear-gradient(top,  #207cca 0%, #207cca 0%, #4d5663 0%, #4d5663 11%, #2d3236 28%, #010101 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #207cca 0%,#207cca 0%,#4d5663 0%,#4d5663 11%,#2d3236 28%,#010101 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #207cca 0%,#207cca 0%,#4d5663 0%,#4d5663 11%,#2d3236 28%,#010101 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#010101',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+
+}
+
+.main-menu-center-left {
+	padding-left: 127px;
+	
+}
+
+.main-menu-center-left li {
+	float: left;
+	list-style: none;
+}
+
+.main-menu-center-left a {
+	display: block;
+	color: #b1bcc0;
+	font-family: Tahoma, Arial, sans-serif; 
+	font-size: 14px;
+	line-height: 36px;
+	text-decoration: none;
+	padding: 0 18px;
+
+
 }
 
 
