@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {	
+	background: #282828;
+
+}
+.wrapper{
+	width:  960px;
+	height: 880px;
+	margin: 20px auto;
+	background-image:url(../img/background.png);
+}
+
+/*HEADER*/
+.logo{
+	padding-top: 58px;
+	padding-left: 60px;	
+}
+.contact {
+	padding-top: 147px;
+	padding-right: 60px;
+	float: right;
+}
+/*CONTENT*/
+.content{
+	padding: 0 50px 165px 50px;
+	clear: both;
+	position:relative; 
+	top:-28px;
+}
+.box{
+	padding: 14px 5px;
+	width: 274px;
+	height: 192px;
+}
+.nepal{
+	padding-top: 20px;
+}
+.footer{
+	color: white;
+	text-align: center;
+}
