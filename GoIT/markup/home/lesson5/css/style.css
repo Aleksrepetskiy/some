@@ -8,16 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Helvetica Neue Regular Bold';
-    src: url('../fonts/helveticaneue-thin-webfont.eot');
-    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
 body {
 	background-color: #282828;
@@ -66,20 +56,27 @@ body {
 	color: #60b5ed; 
 }
 
-.menu a:hover {
+.menu .menu-left:hover {
 	background: #4eabda;
 	color: #ffffff;
 }
 
 .menu .menu-right a {
 	color: #ffffff;
-	border: 1px solid transparent;
+	/*border: 1px solid transparent;*/
 	float: left;
 }
+.menu .underline {
+	padding-left: 10px;
+}
 
-.menu .menu-right a:hover {
-	border: 1px solid #4399d3;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50afdc+0,207cca+100,207cca+100,7db9e8+100,207cca+100,2e7ac4+100 */
+.menu .underline a {
+	text-decoration: underline;
+	padding: 0 7px;
+}
+
+
+.menu .menu-right:hover {
 background: #1e5799; /* Old browsers */
 background: -moz-linear-gradient(top,  #1e5799 0%, #50afdc 0%, #207cca 100%, #207cca 100%, #7db9e8 100%, #207cca 100%, #2e7ac4 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #1e5799 0%,#50afdc 0%,#207cca 100%,#207cca 100%,#7db9e8 100%,#207cca 100%,#2e7ac4 100%); /* Chrome10-25,Safari5.1-6 */
@@ -101,6 +98,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     vertical-align: middle;
     margin: 0 9px 0 3px;
     line-height: 15px;
+}
+
+.ola {
+	float: left;
+	margin-top: 10px;
+	color: #FFFFFF;
 }
 
 /*END HEADER*/
@@ -169,7 +172,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .fancy span:after {
   content: "";
   position: absolute;
-  height: 0px;
   border-top: 1px solid #666666;
   border-bottom: 1px solid #000000;
   top: 0;
