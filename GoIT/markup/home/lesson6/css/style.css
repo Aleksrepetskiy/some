@@ -265,6 +265,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', end
 	width: 70px;
 	font-size: 10px;
 	margin: 0 0 5px 0;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	position: relative;
+	top: 3px;
+
 } 
 
 .search__car--tire dd {
@@ -287,6 +293,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', end
 	width: 70px;
 	font-size: 10px;
 	margin: 0 0 5px 0;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	position: relative;
+	top: 3px;
 } 
 
 .search__car--disk dd {
