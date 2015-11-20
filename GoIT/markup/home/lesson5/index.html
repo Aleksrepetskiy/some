@@ -2,54 +2,56 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<title>You bike</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>	
-	<div class="wrapper">
-		<div class="header clearfix">
-			<ul class="menu">
-				<li><a class="menu-left" href="#">Meu YouBike</a></li>
-				<li><a class="menu-left" href="#">Vender</a></li>
-				<li><a class="menu-left" href="#">Forum</a></li>
-				<li><a class="menu-left" href="#">Contato</a></li>
-				<li><a class="menu-left" href="#">Ajuda</a></li>
-				<li class="menu-right center-line"><a href="#">Minhas Ofertas</a></li>
-				<li class="menu-right underline"><span class="ola">Ola!</span><a href="#">Entrar </a><span class="ola">ou</span><a href="#">Cadastre-se</a></li>
-			</ul>
-
-
-		</div>	
-		<div class="content">
-			<div class="cadastre-se">
-				Cadastre-se
-			</div>
-
-			<div class="ou">
-				<div class="layer_1"><a href=""><img src="img/layer_1.png" alt=""></a></div>
-				<div class="fancy"><span>OU</span></div>
-				<form action="#" class="box">
-					<div ><input class="form" type="text" name="first_name" id="" placeholder="First Name"></div>
-					<div ><input class="form" type="text" name="last_name" id="" placeholder="Last Name"></div>
-					<div ><input class="form" type="email" name="email" id="" placeholder="Email Address"></div>
-					<div ><input class="form" type="password" name="password" id="" placeholder="Choose Password"></div>
-					<div ><input class="form" type="password" name="password" id="" placeholder="Password Confirm"></div>
-					<div class="checkbox"><label for="send"><input  type="checkbox" name="" id="send"><span>Send me Youbike updates and tips</span></label></div>
-					<div><input class="send" type="submit" value="Create my Account"></div>
-				</form>
-				<div class="down_text">By clicking the button above, you agree to the Terms of Service</div>
-				<div class="down_text">Xiew our Privacy Policy.</div>
-
-
-
-			</div>
-			
-
+<body>
+	<div class="header">
+		<div class="login">
+			<span>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></span>
 		</div>
+		<div class="offer">
+			<a href="#">Minhas Ofertas</a>		
+		</div>
+		<ul class="menu">
+			<li><a href="#">Meu YouBike</a></li>
+			<li><a href="#">Vender</a></li>
+			<li><a href="#">Forum</a></li>
+			<li><a href="#">Contato</a></li>
+			<li><a href="#">Ajuda</a></li>
 
+		</ul>
 	</div>
-
-	
+	<div class="wrapper">
+		<div class="input-form">
+			<div class="input-form--header">
+				<p>Cadastre-se</p>
+			</div>
+			<div class="input-form--content">
+				<div class="fasebook">
+					<form action="#" method="post">
+						<input type="button" value="" class="fasebook-btn">
+					</form>
+				</div>
+				<div class="ou"></div>
+				<div class="form">
+					<form action="#" class="box">
+						<input class="input" type="text" name="first_name" id="" placeholder="First Name" required>
+						<input class="input" type="text" name="last_name" id="" placeholder="Last Name">
+						<input class="input" type="email" name="email" id="" placeholder="Email Address" required>
+						<input class="input" type="password" name="password" id="" placeholder="Choose Password" required>
+						<input class="input" type="password" name="password" id="" placeholder="Password Confirm" required>
+						<div class="checkbox">
+							<input  type="checkbox" name="sendneudate" id="sendUpdate">
+							<label for="sendUpdate"><span>Send me Youbike updates and tips</span></label>
+						</div>
+						<input class="account-btn" type="submit" value="Create my Account">
+					</form>
+					<p>By clicking the button above, you agree to the Terms of Service</p>
+					<p>Xiew our Privacy Policy.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
