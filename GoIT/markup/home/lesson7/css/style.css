@@ -5,6 +5,21 @@
 	text-decoration: none;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+
+}
+
 .font-shadow{
     text-shadow: 1px 1px 2px rgba(10, 10, 10, 1);
 }
@@ -47,9 +62,10 @@
 
 .head {
 	height: 846px;
-	background: url(../img/mountain.jpg);
+	background: url(../img/mountain.jpg) 50% 0 no-repeat;
 	font-family: 'League Gothic Regular', Arial, sans-serif;
 	position: relative;
+    margin: 0 auto;
 }
 
 
@@ -225,7 +241,7 @@ nav {
 .about{
   /*  display: inline-block;*/
 
-	    float: left;
+	float: left;
     width: 32.33%;
     padding: 77px 0 0 0px;
     color: #fff;
@@ -261,6 +277,62 @@ nav {
     background-image: url(../img/note_third);
 }
 
+.main-stars {
+    height: 605px;
+    background: #f9f9f9;
+}
+
+.main-stars__column {
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    background: #F20E0E;
+    margin: 0 auto;
+    padding-top: 98px;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+.main-stars__left_column {
+    float: left;
+    height: 272px;
+    background: #ffffff;
+    width: 45%;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-stars__left_column:before {
+    content: '';
+    position: absolute;
+    background: url(../img/fase.png) no-repeat;
+    top: 15px;
+    right: 0px;
+    left: -29px;
+    bottom: 0px;
+}
+
+.main__header {
+    color: #454545;
+    font-family: 'League Gothic Regular', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.main__header span {
+    color: #edbfff;
+    font-family: 'League Gothic Regular', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.font-thin {
+    color: #454545;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    word-wrap: break-word;
+    line-height: 24px;
+}
 
 
 
