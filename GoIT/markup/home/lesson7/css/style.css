@@ -290,6 +290,7 @@ nav {
     margin: 0 auto;
     padding-top: 98px;
     padding-left: 1%;
+    padding-right: 1%;
     box-sizing: border-box;
 }
 
@@ -297,7 +298,7 @@ nav {
     float: left;
     height: 272px;
     background: #ffffff;
-    width: 45%;
+    width: 46%;
     padding: 25px 35px;
     box-sizing: border-box;
     position: relative;
@@ -334,5 +335,16 @@ nav {
     line-height: 24px;
 }
 
+
+.main-stars__right_column {
+    float: right;
+    height: 272px;
+    background: #ffffff;
+    width: 49%;
+    padding: 22px 9px;
+    box-sizing: border-box;
+    position: relative;
+
+}
 
 
