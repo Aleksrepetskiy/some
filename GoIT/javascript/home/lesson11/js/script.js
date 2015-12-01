@@ -9,8 +9,8 @@ console.log ('arr', [arr]);
 console.log ('arr', arr.length);
 
 var nameUser = prompt ('введите имя пользователя', ''),
-len = arr.length;
-result ="";
+len = arr.length,
+result ="",
 p = "Ошибка, введите корректное имя пользователя";
 
 for ( i = 0; i < len; i++) {
