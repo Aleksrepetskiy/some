@@ -1,23 +1,14 @@
 
- var namber = prompt("введите число", '');
- var math = prompt("введите степень, в которую нужно возвести число","");
-
- if (math <= 1) {
-   alert('Степень ' + math +
-     'не поддерживается, введите целое число, больше 1'
-   );
- } else {
-   console.log (pow (namber, math));
- }
-
- function pow(namber, math) {
-   var result = namber;
-
-   for (var i = 1; i < math; i++) {
-     result = result * namber;
+ var namber = +prompt("введите число", '');
+ var power = +prompt("введите степень, в которую нужно возвести число", '');
+ function pow (a, b) {
+   var result = 1;
+   for (var i = 0; i < b; i++) {
+     result = result * a;
    }
-
    return result;
  }
+   var powResult = pow (namber, power);
+   console.log (powResult);
 
 
