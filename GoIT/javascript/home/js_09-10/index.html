@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/selectordie.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.jcarousel.js"></script>
+  <script src="js/jquery.jcarousel-control.min.js"></script>
+  <script src="js/jquery.jcarousel-pagination.min.js"></script>
+  <script src="js/jquery.jcarousel-autoscroll.min.js"></script>
+  <script src="js/selectordie.js"></script>
+  <script src="js/selectordie.min.js"></script>
+  <script src="js/jquery.screwdefaultbuttons.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <ul class="menu clearfix">
+      <li><a href="#">Nav 1</a></li>
+      <li><a href="#">Nav 2</a>
+        <ul class="submenu">
+          <li><a href="">Nav 2.1</a></li>
+          <li><a href="">Nav 2.2</a>
+            <ul class="subsubmenu">
+              <li><a href="">Nav 2.2.1</a></li>
+              <li><a href="">Nav 2.2.2</a></li>
+              <li><a href="">Nav 2.2.3</a></li>
+              <li><a href="">Nav 2.2.4</a></li>
+            </ul>
+          </li>
+          <li><a href="">Nav 2.3</a></li>
+          <li><a href="">Nav 2.4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Nav 3</a></li>
+      <li><a href="#">Nav 4</a></li>
+    </ul>
+  </div>
+  <div class="wrap_jcarousel">
+    <div class="jcarousel">
+      <ul>
+        <li>
+          <img src="img/big1.jpg" alt="1" width="800px">
+        </li>
+        <li>
+          <img src="img/big2.jpg" alt="2" width="800px">
+        </li>
+        <li>
+          <img src="img/big3.jpg" alt="3" width="800px">
+        </li>
+      </ul>
+    </div>
+    <!--  end jcarousel  -->
+    <!--  CONTROLS  -->
+    <a class="jcarousel-prev" href="#">Prev</a>
+    <a class="jcarousel-next" href="#">Next</a>
+    <!--  PAGINATION  -->
+    <p class="jcarousel-pagination"></p>
+  </div>
+  <!--  end wrap_jcarousel  -->
+
+
+  <section id="cover" class="cover">
+    <select class="well_hello_there" data-placeholder-option="true" data-custom-class="cover_sod no_highlight">
+      <option value="null">Select or Die?</option>
+      <option value="#intro">What</option>
+      <option value="#config">What</option>
+      <option value="#methods">What</option>
+      <option value="#download">What</option>
+      <option value="#download">What</option>
+      <option value="#download">What</option>
+      <option value="#download">What</option>
+      <option value="#download">What</option>
+    </select>
+  </section>
+
+  <div class="checkboxExample">
+      <input type="checkbox" name="apple" id="appleBtn" value="Apples" />
+      <label for="appleBtn">Apples</label>
+      <input type="checkbox" name="orange" id="orangesBtn" value="Oranges"/>
+      <label for="orangesBtn">Oranges</label>
+      <input type="checkbox" name="banana" id="BananasBtn" value="Bananas" />
+      <label for="BananasBtn">Bananas</label>
+  </div>
+
+</body>
+
+</html>

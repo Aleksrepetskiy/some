@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Example Custom Radio</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script src="js/jquery.screwdefaultbuttons.js"></script>
+
+<script>
+$(document).ready(function(){
+	
+	$('input:radio').screwDefaultButtons({
+		checked: 	"url(images/radio_Checked.jpg)",
+		unchecked:	"url(images/radio_Unchecked.jpg)",
+		width:		85,
+		height:		85
+	});
+	
+	$('input:checkbox').screwDefaultButtons({
+		checked: 	"url(images/checkbox_Checked.jpg)",
+		unchecked:	"url(images/checkbox_Unchecked.jpg)",
+		width:		85,
+		height:		85
+	});
+
+
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+    
+
+			<div class="radioExample">
+            
+                <input type="radio" name="size" id="largeBtn" value="Large" />
+                <label for="largeBtn">Large</label>
+                
+                <input type="radio" name="size" id="mediumBtn" value="Medium"/>
+                <label for="mediumBtn">Medium</label>
+                
+                <input type="radio" name="size" id="smallBtn" value="Small" />
+                <label for="smallBtn">Small</label>
+                
+            </div>
+            
+            
+            <div class="checkboxExample">
+            
+                <input type="checkbox" name="apple" id="appleBtn" value="Apples" />
+                <label for="appleBtn">Apples</label>
+                
+                <input type="checkbox" name="orange" id="orangesBtn" value="Oranges"/>
+                <label for="orangesBtn">Oranges</label>
+                
+                <input type="checkbox" name="banana" id="BananasBtn" value="Bananas" />
+                <label for="BananasBtn">Bananas</label>
+                
+            </div>
+            
+            
+	</div>
+
+</body>
+</html>
