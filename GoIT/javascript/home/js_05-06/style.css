@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  background-color: #333;
+  padding-top: 100px;
+}
+.header {
+  text-align: center;
+  color: red;
+}
+
+.content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.buttons {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.info {
+  text-align: center;
+}
+
+.info p {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+#hours, #minutes, #seconds, #milliseconds {
+  font-size: 40px;
+}
