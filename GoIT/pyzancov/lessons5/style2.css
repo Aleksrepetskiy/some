@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS";
+}
+.container {
+    margin: 50px auto;
+    width: 288px;
+    background-color: #ee8129;
+    border-radius: 5px;
+    padding: 30px 4px 4px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(203, 226, 239, 1);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(203, 226, 239, 1);
+    box-shadow: 0px 0px 7px 1px rgba(203, 226, 239, 1);
+}
+.header {
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.content {
+    padding: 20px 0 30px;
+    background: #ffffff;
+    text-align: center;
+}
+.content__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #3f4042;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.content__price {
+    font-size: 72px;
+    font-weight: bold;
+    color: #35495a;
+}
+.sup {
+    vertical-align: 40px;
+    font-size: 18px;
+}
+.sub {
+    vertical-align: -8px;
+    font-size: 18px;
+}
+.content__list {
+    margin: 20px 15px 17px;
+}
+.content__item {
+    position: relative;
+    list-style: none;
+    margin-bottom: 1px;
+    font-size: 15px;
+    color: #888c94;
+    text-align: left;
+    font-weight: normal;
+    line-height: 33px;
+    padding-left: 64px;
+}
+.content__item:nth-child(2n) {
+    background: #f5f5f6;
+}
+.content__item:nth-child(2n+1) {
+    background: #edf5fd;
+}
+.content__item:before {
+    content: "";
+    background: url(markers.png) no-repeat;
+    top: 8px;
+    left: 34px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 0;
+}
+.content__button {
+    width: 250px;
+    height: 39px;
+    background: #ee8129;
+    /*margin-top: 16px;*/
+    border-color: #ee8129;
+    border-bottom: 3px solid #b3560b;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+}
+.content__button:active {
+    border-right: 3px solid #b3560b;
+    border-left: 3px solid #b3560b;
+    border-top: 3px solid #b3560b;
+    border-bottom:inherit;
+}
