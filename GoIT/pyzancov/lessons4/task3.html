@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task3</title>
+  <link href='https://fonts.googleapis.com/css?family=Economica:700,400' rel='stylesheet' type='text/css'>
+ <style>
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ .container {
+   width: 100%;
+   height: 650px;
+   background: rgb(32, 150, 129);
+   border-top: 1px solid;
+   position: relative;
+   border: 1px solid #000;
+ }
+ .menu {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 580px;
+   height: 25px;
+   padding: 10px;
+   margin: auto;
+   background: rgb(255, 255, 255);
+   border-radius: 3px;
+ }
+ .menu__item {
+  display: inline-block;
+  list-style: none;
+ }
+ .menu__link {
+   font-family: 'Economica', sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid #8e8968;
+   border-radius: 5px;
+   color: rgb(181, 23, 139);
+   padding: 5px 10px ;
+ }
+ .menu__link:hover {
+   border: 1px solid #9e00ff;
+   color: #ffffff;
+  background: rgb(153, 46, 139)
+
+ }
+ .menu__link--first, .menu__link--prev, .menu__link--next, .menu__link--last {
+   font-family: 'Economica', sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgb(181, 23, 139);
+   margin: 0 10px;
+ }
+ .menu__link--first::before {
+   content: "\300A";
+   margin-right: 5px;
+ }
+ .menu__link--prev::before {
+   content: "<<";
+   margin-right: 5px;
+ }
+.menu__link--next::after {
+  content: ">>";
+  margin-left: 5px;
+}
+.menu__link--last::after {
+  content: "\300B";
+  margin-left: 5px;
+}
+.menu__link--dots {
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(181, 23, 139);
+  padding: 5px 10px ;
+}
+ </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="menu">
+      <li class="menu__item"><a href="#" class="menu__link--first">First</a></li>
+      <li class="menu__item"><a href="#" class="menu__link--prev">Prev</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">1</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">2</a></li>
+      <li class="menu__item"><a href="#" class="menu__link--dots">...</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">5</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">6</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">7</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">8</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">9</a></li>
+      <li class="menu__item"><a href="#" class="menu__link--next">Next</a></li>
+      <li class="menu__item"><a href="#" class="menu__link--last">Last</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
