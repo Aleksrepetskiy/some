@@ -2,45 +2,59 @@
     margin: 0;
     padding: 0;
 }
-.clearfix:after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
+.body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 .reviews {
+    display: inline-block;
     width: 100%;
-    margin-top: 50px;
-    background: url(../img/background.jpg) 0 0 no-repeat, ;
+    background: url(../img/background.jpg) no-repeat;
     font-family: 'Trebuchet MS';
     background-size: cover;
-    padding: 57px 0 80px;
+    padding: 60px 0 80px;
+    text-align: center;
 }
-.reviews__title {
+.reviews__header {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
     color: #3170a8;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
-.reviews__firstWorld {
+.reviews__header_firstWorld {
     color: #ee8129;
 }
-.reviews__one, .reviews__second {
+.reviews__item {
     display: inline-block;
-    width: 490px;
+    /*width: 530px;*/
+    margin: auto;
+    margin-top: 51px;
+    text-align: left;
 }
+.reviews__img {
+    width: 98px;
+    height: 98px;
+    position: relative;
+    margin-right: 22px;
+}
+
 .reviews__testimonius {
     position: relative;
     display: inline-block;
-    width: 359px;
-    background-color: #ffffff;
-    padding: 18px 18px 24px;
-    vertical-align: top;
-    box-sizing: border-box;
-}
 
+    max-width: 362px;
+    background-color: #ffffff;
+    vertical-align: top;
+    margin-right: 40px;
+    border: 1px solid #fff;
+
+    /*bottom: 11px;*/
+
+    /*padding: 18px 18px 24px;
+    box-sizing: border-box;*/
+}
 .reviews__testimonius::before {
     content: '';
     width: 0;
@@ -51,33 +65,26 @@
     border: 14px solid;
     border-color: transparent #ffffff transparent transparent;
 }
-.reviews__one {
-    margin-right: 40px;
-}
-.reviews__img {
-    margin-right: 26px;
-}
-.reviews__name {
-    float: left;
-    color: #3070a8;
+
+.reviews__testimonius-header {
+    margin: 13px 20px 0 16px;
     font-style: italic;
     font-size: 13px;
+    color: #3070a8;
+    border-bottom: 1px dashed #666666;
+    padding-bottom: 2px;
+    overflow: hidden;
+}
+
+.reviews__name {
+    float: left;
 }
 .reviews__customer {
     float: right;
-    color: #3070a8;
-    font-style: italic;
-    font-size: 13px;
 }
 .reviews__text {
+    margin: 12px 20px 21px 16px;
     margin-top: 12px;
     font-size: 13px;
-    /*clear: both;*/
-    border-top: 1px dashed #666666;
     color: #666666;
-}
-
-.reviews__container {
-    width: 1050px;
-    margin: 0 auto;
 }
