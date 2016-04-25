@@ -96,7 +96,6 @@
     list-style: none;
     color: #888c94;
 }
-
 .pricing__item {
     position: relative;
     padding: 10px 0 10px 62px;
@@ -114,7 +113,7 @@
     position: absolute;
     top: 12px;
     left: 0;
-    background: url(markers.png) no-repeat;
+    background: url(../img/markers.png) no-repeat;
     width: 16px;
     height: 16px;
     margin-left: 40px;
