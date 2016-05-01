@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 80%;
+    margin: 100px auto;
+    min-width: 200px;
+}
+.arrow {
+    position: relative;
+    display: table;
+    width: 90%;
+    height: 59px;
+    padding-left: 4px;
+    background: #f9b60c;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f9b60c 0%, #f7dfa3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9b60c 0%, #f7dfa3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9b60c 0%, #f7dfa3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.arrow_body {
+    display: table-cell;
+    width: 99%;
+}
+.arrow__field {
+    width: 99%;
+    height: 23px;
+    margin: 5px 0 5px 0;
+}
+.arrow__btn {
+    width: 69px;
+    height: 27px;
+    font-size: 14px;
+    border: 1px solid #898989;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #fcffff, #c4c4c4);
+    margin-right: 20px;
+    margin-left: 4px;
+}
+.arrow__text {
+    position: absolute;
+    padding-bottom: 4px;
+    top: 35px;
+    left: 5px;
+}
+.arrow__text--decor {
+    margin-left: 1px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dotted;
+}
+.arrow__text--decor:hover {
+    cursor: pointer;
+}
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    right: -27px;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    transform: rotate(30deg);
+}
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -27px;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    transform: rotate(60deg);
+}
