@@ -166,7 +166,7 @@ body {
 .middle {
     position: relative;
     width: 100%;
-    min-width: 100%;
+    min-width: 1024px;
     height: 575px;
     margin: 0 auto;
     /*margin-bottom: 70px;*/
@@ -297,6 +297,7 @@ body {
 .footer {
     display: table;
     width: 100%;
+    min-width: 1024px;
     height: 105px;
     background-color: #3070a8;
 }
