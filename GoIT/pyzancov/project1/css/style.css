@@ -375,6 +375,7 @@ body {
 .reviews {
     display: inline-block;
     width: 100%;
+    min-width: 1024px;
     background: url(../img/background.jpg) no-repeat;
     font-family: 'Trebuchet MS';
     background-size: cover;
