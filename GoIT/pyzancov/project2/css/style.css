@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #f6f9f9;
+}
+
+.gallery {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+.gallery__title {
+  margin-bottom: 18px;
+  font-size: 41px;
+  color: #2d3950;
+  letter-spacing: 1px;
+}
+.gallery__subtitle {
+  font-size: 15px;
+  line-height: 23px;
+  color: #909090;
+  letter-spacing: 0.4px;
+  margin-bottom: 77px;
+}
+.gallery__container {
+  font-size: 0px;
+}
+.gallery__imgbox {
+  display: inline-block;
+  position: relative;
+  width: 360px;
+  height: 260px;
+  margin: 0 15px 30px 15px;
+  border-radius: 2px;
+}
+.gallery__img {
+  display: block;
+}
+.gallery__layer {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(37, 166, 247, 0.9);
+  font-size: 0;
+  border-radius: 2px;
+}
+.buttons {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 109px 5px 0;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.gallery__zoom::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 13px auto;
+  background: url(../img/buttons.png) 0 0 no-repeat;
+}
+.gallery__link::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 13px auto;
+  background: url(../img/buttons.png) -15px 0 no-repeat;
+}
+.gallery__imgbox:hover .gallery__layer {
+  display: block;
+}
+.gallery__zoom:hover, .gallery__link:hover {
+  background-color: #25a6f7;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*right: 0;
+  bottom: 0;*/
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.popup {
+  display: none;
+  position: fixed;
+  width: 1140px;
+  top: 160px;
+  left: 50%;
+  margin-left: -573px;
+  border: 3px solid #999999;
+}
+.popup__img {
+  display: block;
+}
+.popup__close {
+  position: absolute;
+  top: -23px;
+  right: 17px;
+  width: 40px;
+  height: 40px;
+  background: #f74c26 url(../img/close.png) center center no-repeat;
+}
