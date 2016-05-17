@@ -1,11 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
 body {
   font: 12px 'Open Sans', sans-serif;
   color: #868585;
-
+  background: #fdfcfb;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+.header {
+  margin: 100px 0 82px 0;
+}
+.navbar-brand {
+  margin-right: 73px;
+}
+.navbar-brand img {
+  position: relative;
+  top: -48px;
+}
+.menu {
+  text-transform: uppercase;
+  background: #fefefe;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+  padding: 15px 0;
+}
+.navbar-default .navbar-nav>li>a {
+  font-size: 18px;
+  color: #8d8c8c;
+}
+.navbar-nav>li.active-link>a {
+  border-bottom: 1px solid #d42819;
+}
+.navbar-default .navbar-nav:not(.icons)>li>a:hover {
+  border-bottom: 1px solid #d42819;
+  color: #8d8c8c;
+}
+.icons li a {
+  padding: 15px 5px;
+}
+.menu .container {
+  position: relative;
+}
+.globe {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  line-height: 50px;
+  right: 25px;
+  cursor: pointer;
 }
 
 /* Large Devices, Wide Screens */
@@ -15,15 +59,69 @@ img {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  .navbar-brand {
+    margin-right: 10px;
+  }
+  .icons {
+    display: none;
+    position: absolute;
+    right: 34px;
+    top: 40px;
+  }
+  .icons li {
+    float: none;
+  }
+  .icons li a {
+    padding: 5px;
+  }
+  .globe {
+    display: block;
+  }
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+  .navbar-brand img {
+    top: -15px;
+    max-height: 50px;
+  }
+  .globe {
+    display: none;
+  }
+  .menu {
+    padding: 0;
+  }
+  .navbar-nav>li.active-link>a {
+    border-bottom: 0;
+    color: #fff;
+    background: #ff0000;
+  }
+  .navbar-default .navbar-nav:not(.icons)>li>a:hover {
+    border-bottom: 0;
+    color: #fff;
+    background: #ff0000;
+  }
+  .icons {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .icons li {
+    display: inline-block;
+  }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (min-width : 993px) {
+  .icons {
+    display: block !important;
+  }
 
 }
