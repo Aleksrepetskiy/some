@@ -30,7 +30,7 @@ img {
   font-size: 18px;
   color: #8d8c8c;
 }
-.navbar-nav>li.active-link>a {
+.navbar-nav>li>a.active-link {
   border-bottom: 1px solid #d42819;
 }
 .navbar-default .navbar-nav:not(.icons)>li>a:hover {
