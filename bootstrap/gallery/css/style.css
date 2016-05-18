@@ -30,7 +30,7 @@ img {
   font-size: 18px;
   color: #8d8c8c;
 }
-.navbar-nav>li>a.active-link {
+.navbar-nav>li.active-link>a {
   border-bottom: 1px solid #d42819;
 }
 .navbar-default .navbar-nav:not(.icons)>li>a:hover {
@@ -52,6 +52,47 @@ img {
   cursor: pointer;
 }
 
+/*CONTENT*/
+.title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.title h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 33px;
+}
+.red {
+  color: #f00;
+}
+.cardrow {
+  margin-bottom: 50px;
+}
+.cardrow img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+}
+.cardrow a:hover img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.90);
+}
+.nav-page {
+  text-align: center;
+}
+.pagination>li>a, .pagination>li>span {
+  color: #6c6c6c;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #cf4b2d;
+}
+
+.footer {
+  margin-bottom: 100px;
+}
+.footer hr {
+  border-top: 1px solid #b7b6b6;
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -77,6 +118,17 @@ img {
   .globe {
     display: block;
   }
+  .cardrow {
+    text-align: center;
+  }
+  .cardrow {
+    margin-bottom: 0;
+  }
+  .card {
+    margin-bottom: 25px;
+  }
+
+
 
 }
 
@@ -92,10 +144,11 @@ img {
   .menu {
     padding: 0;
   }
-  .navbar-nav>li.active-link>a {
+  .navbar-default .navbar-nav>li.active-link>a {
     border-bottom: 0;
     color: #fff;
     background: #ff0000;
+    border-bottom: none;
   }
   .navbar-default .navbar-nav:not(.icons)>li>a:hover {
     border-bottom: 0;
@@ -111,17 +164,25 @@ img {
   .icons li {
     display: inline-block;
   }
+  .card {
+    margin-bottom: 50px;
+  }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .header,
+  .title {
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (min-width : 993px) {
   .icons {
     display: block !important;
   }
-
 }
