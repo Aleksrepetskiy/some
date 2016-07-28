@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson6</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    Домашнее задание. JS. Урок 6. <br>
+    <br>
+
+Задание 1 (Удаление css клссов)<br>
+<br>
+
+У объекта есть свойство className, которое хранит список css класов – слов, разделенных пробелами:<br>
+
+var obj = {<br>
+  className: 'open menu'<br>
+};<br>
+Напишите функцию removeClass(obj, cls), которая удаляет класс cls, если он есть:<br>
+
+removeClass(obj, 'open'); // obj.className='menu'<br>
+removeClass(obj, 'blabla'); // без изменений<br>
+P.S. Дополнительное усложнение. Функция должна корректно обрабатывать дублирование класса в строке:<br>
+
+obj = {<br>
+  className: 'my menu menu'<br>
+};<br>
+
+removeClass(obj, 'menu');<br>
+
+console.log( obj.className ); // 'my'<br>
+Лишних пробелов после функции образовываться не должно.<br>
+<br>
+
+Задание 2 (Сортировка массива строк)<br>
+<br>
+
+Есть массив строк arr. Создайте массив arrSorted — из тех же элементов, но отсортированный.<br>
+
+Исходный массив не должен меняться.<br>
+
+var arr = ['HTML', 'JavaScript', 'CSS'];<br>
+
+// ... ваш код ...<br>
+
+console.log( arrSorted ); // CSS, HTML, JavaScript<br>
+console.log( arr ); // HTML, JavaScript, CSS (без изменений)<br>
+<br>
+Задание 3 (Random sort)<br>
+<br>
+
+Необходимо отсортировать массив в случайном порядке используя метод sort.<br>
+
+var arr = [1, 2, 3, 4, 5];<br>
+
+arr.sort(ваша функция);<br>
+
+console.log( arr ); // элементы в случайном порядке, например [3,5,1,2,4]<br>
+<br>
+Задание 4 (Object sort)<br>
+<br>
+Напишите код, который отсортирует массив объектов people по полю age.<br>
+
+Например:<br>
+
+var vasya = { name: 'Вася', age: 23 };<br>
+var masha = { name: 'Маша', age: 18 };<br>
+var vovochka = { name: 'Вовочка', age: 6 };<br>
+
+var people = [ vasya , masha , vovochka ];<br>
+
+... ваш код ...<br>
+
+// теперь people: [vovochka, masha, vasya]<br>
+console.log(people[0].age) // 6<br>
+Выведите список имён в массиве после сортировки.<br>
+<br>
+
+Задание 5 (Проверка на палиндром)<br>
+<br>
+
+Палиндром - это строка которая читается с обоих сторон одинаково. Например: Анна, оно, А роза упала на лапу Азора.<br>
+
+Необходимо написать функцию isPal(string) которая возвращает true или false в зависимости от того является ли строка палиндромом или нет.<br>
+
+console.log(isPal('Anna')); // true<br>
+console.log(isPal('А роза упала на лапу Азора')); //true<br>
+console.log(isPal('Вася')); //false<br>
+console.log(isPal('12321')); //true<br>
+console.log(isPal('123212')); //false<br>
+<br>
+Задание 6 (Уникальные элементы массива)<br>
+<br>
+
+Напишите функцию unique(arr), которая возвращает массив, содержащий только уникальные элементы arr (arr — массив строк).<br>
+
+var strings = ['кришна', 'кришна', 'харе', 'харе', 'харе', 'харе', 'кришна', 'кришна', '8-()' ];<br>
+
+console.log( unique(strings) ); // кришна, харе, 8-()<br>
+<br>
+Задание 7 (Анаграммы)<br>
+<br>
+
+Анаграммы — слова, состоящие из одинакового количества одинаковых букв, но в разном порядке. Например:<br>
+
+воз - зов киборг - гробик корсет - костер - сектор<br>
+
+Напишите функцию anClean(arr), которая возвращает массив слов, очищенный от анаграмм.<br>
+
+var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];<br>
+
+console.log( anClean(arr) ); // 'воз,киборг,корсет' или 'ЗОВ,гробик,сектор'<br>
+Из каждой группы анаграмм должно остаться только одно слово, не важно какое.<br>
+<br>
+
+CodeWars<br>
+<br>
+
+Return the Missing Element<br>
+Add Property to Every Object in Array<br>
+Find Your Villain Name<br>
+Use reduce() to calculate the sum of the values in an array<br>
+Take a Ten Minute Walk<br>
+
+</body>
+</html>
