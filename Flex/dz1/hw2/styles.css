@@ -8,6 +8,8 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 	height: 100%;
 	padding: 0 5px;
 	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section.profit{
@@ -16,9 +18,16 @@ section.profit{
 }
 
 section.profit .item{
-	border: 3px solid #fff;
 	text-align: center;
 	background: #fff;
+	border: 1px solid #fff;
+	margin: 0 5px;
+	flex-basis: 30%;
+	min-width: 150px;
+	flex-grow: 1;
+}
+section.profit .item img{
+	max-width: 100%;
 }
 
 /* positions */
