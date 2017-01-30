@@ -10,6 +10,7 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 section.profit{
@@ -21,10 +22,10 @@ section.profit .item{
 	text-align: center;
 	background: #fff;
 	border: 1px solid #fff;
-	margin: 0 5px;
+	margin: 10px;
 	flex-basis: 30%;
 	min-width: 150px;
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 }
 section.profit .item img{
 	max-width: 100%;
