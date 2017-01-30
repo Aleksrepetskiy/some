@@ -2,6 +2,12 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 
 /* styles */
 
+.meta{
+	background: #ddd;
+	padding: 5px 0;
+	overflow: hidden;
+	font-size: 20px;
+}
 .article{
 	max-width: 600px;
 	padding: 5px;
@@ -10,21 +16,10 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 	border-radius: 10px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:space-between;
+	justify-content:center;
 }
 .cat {
-	flex-basis: 500px;
-}
-.dt {
-	align-self: center;
-	text-align: center;
-}
-
-.meta{
-	background: #ddd;
-	padding: 5px 0;
-	overflow: hidden;
-	font-size: 20px;
+	flex-grow: 1;
 }
 
 /* positions */
