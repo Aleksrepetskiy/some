@@ -7,6 +7,8 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 	height: 100%;
 	padding: 0 5px;
 	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section.profit{
@@ -18,11 +20,35 @@ section.profit .item{
 	border: 3px solid #fff;
 	text-align: center;
 	background: #fff;
+	display: flex;
+	margin: 10px;
+	flex-basis: 400px;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section.profit .item img{
+	max-width: 100%;
+	display: block;
+
+}
+.img {
+	max-width: 25%;
+	min-width: 100px;
 }
 
 section.profit .item .text{
+	max-width: calc(75% - 20px);
 	text-align: left;
 	font-style: italic;
+	margin-left: 10px;
+	min-width: 300px;
+}
+
+@media screen and (max-width: 862px)  {
+	.wrap .item:nth-child(even) {
+		direction: rtl;
+	}
 }
 
 /* positions */
