@@ -1,7 +1,14 @@
 body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td,menu{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ul li,menu li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 
+
+section.profit .item img{
+	max-width: 100%;
+	display: block;
+}
+
+
 /* styles */
-.wrap{
+.wrap {
 	max-width: 960px;
 	margin: 0 auto;
 	height: 100%;
@@ -17,37 +24,31 @@ section.profit{
 }
 
 section.profit .item{
-	border: 3px solid #fff;
+	border: 1px solid #fff;
 	text-align: center;
 	background: #fff;
 	display: flex;
 	margin: 10px;
-	flex-basis: 400px;
-	flex-grow: 1;
 	flex-wrap: wrap;
-	justify-content: center;
+	flex: 1 1 400px;
 }
-section.profit .item img{
-	max-width: 100%;
-	display: block;
-
-}
-.img {
-	max-width: 25%;
-	min-width: 100px;
+section.profit .item .img {
+	flex: 1 1 100px;
 }
 
 section.profit .item .text{
-	max-width: calc(75% - 20px);
+	flex: 3 1 290px;
 	text-align: left;
 	font-style: italic;
-	margin-left: 10px;
-	min-width: 300px;
+	margin: 0 5px;
 }
 
-@media screen and (max-width: 862px)  {
+@media screen and (max-width: 880px)  {
+	section.profit .item {
+		flex-basis: 100%;
+	}
 	.wrap .item:nth-child(even) {
-		direction: rtl;
+		flex-direction: row-reverse;
 	}
 }
 
