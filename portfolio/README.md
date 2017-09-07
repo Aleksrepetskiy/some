@@ -1,5 +1,12 @@
-<<<<<<< HEAD
-Aleksandr Repetskiy 2
-=======
-Aleksandr Repetskiy 1
->>>>>>> 2182c1195c2bc0af1ec11cee0e6c9bb58bceac90
+Gulp-Webpack сборка
+
+Для работы сборки у вас должны быть установлены глобально:
+
+1) npm 5
+2) gulp-cli
+
+Как установить проект:
+
+1) clone this repo
+2) npm i (для Windows 10, версия должна быть 5.3  npm install npm@5.3.0 -g )
+3) gulp4 (npm i github:gulpjs/gulp#4.0)
