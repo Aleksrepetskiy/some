@@ -1,0 +1,14 @@
+/*INDEX*/
+.containet {
+	background: url('../images/water.jpg') no-repeat;
+	background-size: cover;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+.autorization {
+	min-width: 380px;
+	text-align: center;
+}
+input[name="login"], input[name="password"] {
+	width: 100%;
+}

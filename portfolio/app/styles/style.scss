@@ -1,5 +1,43 @@
+@import './node_modules/normalize_css/normalize';
+@import 'common/fonts.scss';
+@import 'common/variables.scss';
+@import 'common/menu';
+@import 'common/index.scss';
+
 body {
-    margin: 10px;
-    background: #ccc;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
 }
-@import 'common/menu'
+.h1 {
+    font-size: 63px;
+    line-height: 70px;
+
+}
+.h2 {
+    font-size: 35px;
+    color: $white;
+    line-height: 40px;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -45px;
+		height: 3px;
+		width: 90px;
+		bottom: -29px;
+		background-color: #fff;
+	}
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.flex__box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}

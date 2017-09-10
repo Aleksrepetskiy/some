@@ -2,4 +2,43 @@ extends ../template
 block variables
     - var title = 'Главная'
 block content
-    h1 Главная
+    div.containet.flex__box 
+        section.autorization
+            h2.h2 Авторизуйтесь
+            div.form
+                form
+                    input(
+                      type='text'
+                      name='login'
+                    )    
+                    input(
+                      type='password'
+                      name='password'
+                    )  
+                    label
+                        input(
+                          type='checkbox'
+                          name='check'
+                          checked
+                        )
+                        .
+                            Я человек    
+                    div.form__ask Вы точно не робот? 
+                    label
+                        input(
+                            type='radio'
+                            name='radio'
+                            ) 
+                        .
+                             Да
+                    label 
+                        input(type='radio' name='radio') 
+                        .
+                            Не уверен
+                    .autorization__buttons
+                        a(href='google.com') На главную
+                        button(type='submit') Войти
+
+                        
+                    
+                    
