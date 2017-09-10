@@ -27,7 +27,7 @@ const paths = {
     images: {
         src: 'app/images/**/*.*',
         dest: 'build/images/'
-    }
+    },
     scripts: {
         src: 'app/js/**/*.js',
         dest: 'build/js/'
@@ -60,7 +60,7 @@ function clean() {
 }
 //webpack
 function scripts() {
-    return gulp.src('./app/jss/script.js')
+    return gulp.src('./app/js/script.js')
         .pipe(gulpWebpack(webpackConfig, webpack))
         .pipe(gulp.dest(paths.scripts.dest));
 }
