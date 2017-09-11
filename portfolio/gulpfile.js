@@ -31,6 +31,10 @@ const paths = {
     scripts: {
         src: 'app/js/**/*.js',
         dest: 'build/js/'
+    },
+    fonts: {
+        src: 'app/fonts/**/*.*',
+        dest: 'build/fonts/'
     }
 }
 
@@ -54,6 +58,12 @@ function images(){
     return gulp.src(paths.images.src)
     .pipe(gulp.dest(paths.images.dest));
 }
+//fonts
+function fonts(){
+    return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest));
+}
+
 //clear
 function clean() {
     return del(paths.root)
@@ -70,6 +80,7 @@ function watch() {
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.fonts.src, fonts);
 }
 //browserSync
 function server() {
@@ -84,11 +95,11 @@ exports.styles    = styles;
 exports.clean     = clean;
 
 gulp.task('default', gulp.series(
-    gulp.parallel(styles, templates, scripts, images),
+    gulp.parallel(styles, templates, scripts, images, fonts),
     gulp.parallel(watch, server)
 ));
 
 gulp.task('build', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images)
+    gulp.parallel(styles, templates, images, fonts)
 ));
