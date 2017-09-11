@@ -6,7 +6,7 @@
 	min-height: 100vh;
 }
 .autorization {
-	max-width: 380px;
+	min-width: 380px;
 	text-align: center;
 	background: rgba(18, 38, 32, .6);
 	border-radius: 5px;
@@ -24,6 +24,23 @@ input[name="login"], input[name="password"] {
 	border: none;
 	border-radius: 50px;
 }
-input {
+.input__login, .input__passworld {
+	position: relative;
 	margin-bottom: 20px;
+	&::before {
+		content: url('../images/icons/login.svg');
+		background-color: $liteyellow;
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+		width: 45px;
+		position: absolute;
+		left: 0;
+		top:0;
+		bottom: 0;
+		border-radius: 50px 0 0 50px;
+	}
+}
+.input__passworld::before {
+	content: url('../images/icons/password.svg');
 }

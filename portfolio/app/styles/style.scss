@@ -24,6 +24,7 @@ body {
 	position: relative;
     font-family: sansusWebissimo, sans-serif;
     text-transform: uppercase;
+    font-weight: 400;
 	&::after {
 		content: '';
 		display: block;
