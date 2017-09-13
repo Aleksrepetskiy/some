@@ -1,30 +1,33 @@
 /*INDEX*/
-.containet {
+.wrapper  {
 	background: url('../images/water.jpg') no-repeat;
 	background-size: cover;
 	min-width: 100vw;
 	min-height: 100vh;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.container {
+
 }
 .autorization {
 	min-width: 380px;
+	max-width: 380px;
 	text-align: center;
 	background: rgba(18, 38, 32, .6);
 	border-radius: 5px;
+	color: $white;
 }
-.input__box {
-	padding: 30px 20px;
+.autorization__none {
+	display: none;
 }
-input[name="login"], input[name="password"] {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 14px 0 14px 60px;
-	color: #373e42;
-	font-family: Roboto;
-	font-size: 16px;
-	border: none;
-	border-radius: 50px;
+.input-container {
+	padding: 10px 20px 0 20px;
 }
-.input__login, .input__passworld {
+.input__box, .form__ask {
+	margin: 20px 0;
+}
+.input__box--login, .input__box--password {
 	position: relative;
 	margin-bottom: 20px;
 	&::before {
@@ -32,7 +35,7 @@ input[name="login"], input[name="password"] {
 		background-color: $liteyellow;
 		display: flex;
 		justify-content: center;
-    	align-items: center;
+		align-items: center;
 		width: 45px;
 		position: absolute;
 		left: 0;
@@ -41,6 +44,143 @@ input[name="login"], input[name="password"] {
 		border-radius: 50px 0 0 50px;
 	}
 }
-.input__passworld::before {
+.input__box--password::before {
 	content: url('../images/icons/password.svg');
+}
+.input--login, .input--password {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 14px 0 14px 60px;
+	color: #373e42;
+	font-family: $default-font;
+	font-size: 16px;
+	border: none;
+	border-radius: 50px;
+}
+.input, .label{
+	vertical-align: middle;
+	margin: 0;
+}
+.label{
+	margin-left: 5px;
+	color: $white;
+	position: relative;
+}
+.input--checkbox, .input--radio {
+	width: 20px;
+	height: 20px;
+}
+
+.input--checkbox:checked + .label:after {
+	content: url('../images/icons/check.svg');
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: -30px;
+	background-color: $green;
+	border-radius: 2px;
+}
+.input--radio:checked + .label:after {
+	content: '';
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	border-radius: 100%;
+	top: 8px;
+	left: -20px;
+	margin-left: -5px;
+	margin-top: -5px;
+	background-color: $green;;
+}
+.input--radio:checked + .label {
+	color: $green;
+}
+.input__box--radio {
+	label {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.button {
+	display: block;
+	padding: 10px 0;
+	background-color: $litegreen;
+	border: none;
+	color: $white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 36px;
+	font-family: $default-font;
+	border-right: 2px solid #dee3e7;
+	box-sizing: border-box;
+	flex-grow: 1;
+	cursor: pointer;
+}
+.autorization__buttons {
+	border-radius: 0 0 5px 5px;
+	overflow: hidden;
+}
+.button:last-child {
+	border-right: 0;
+}
+.button:hover{
+	background-color: $green;
+}
+.my-foto {
+	max-width: 140px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 40px auto 20px auto;
+}
+.my__text {
+	margin: 10px 0;
+}
+.my-foto__img {
+	display: block;
+}
+.my-name {
+	font-size: 28px;
+	font-weight: 500;
+}
+.soc {
+	margin: 40px 0 40px 0;
+}
+.soc__link {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+.icon-svg {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	fill: $litegray;
+	cursor: pointer;
+}
+.icon-svg-in {
+	width: 25px;
+	height: 25px;
+}
+.icon-svg:hover {
+	fill: $green;
+}
+.button__avtorization__wrap {
+	text-align: right;
+	padding: 20px 100px;
+}
+.button__avtorization {
+	display: inline-block;
+	padding: 10px 25px;
+	color: $white;
+	border: 1px solid $white;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.button__avtorization:hover {
+	border: 1px solid $litegreen;
+	background-color: $green;
 }

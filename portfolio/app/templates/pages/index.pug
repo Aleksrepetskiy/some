@@ -2,48 +2,57 @@ extends ../template
 block variables
     - var title = 'Главная'
 block content
-    div.containet.flex__box 
-        section.autorization
-            h2.h2 Авторизуйтесь
-            div.form
-                form
-                    div.input__box
-                        div.input__login
-                            input(
-                              type='text'
-                              name='login'
-                              placeholder="Логин"
-                            ) 
-                        div.input__passworld   
-                            input(
-                              type='password'
-                              name='password'
-                              placeholder="Пароль"
-                            )  
-                        label
-                            input(
-                              type='checkbox'
-                              name='check'
-                              checked
-                            )
-                            .
-                                Я человек    
-                        div.form__ask Вы точно не робот? 
-                        label
-                            input(
-                                type='radio'
-                                name='radio'
+    div.wrapper 
+        div.button__avtorization__wrap
+            div.button__avtorization Авторизоваться
+        div.container.flex-box
+                
+            section.autorization.autorization__none
+                h2.h2 Авторизуйтесь 
+                div.form
+                    form
+                        div.input-container
+                            div.input__box.input__box--login
+                                input.input.input--login(
+                                  type='text'
+                                  name='login'
+                                  placeholder="Логин"
                                 ) 
-                            .
-                                 Да
-                        label 
-                            input(type='radio' name='radio') 
-                            .
-                                Не уверен
-                    .autorization__buttons
-                        a(href='google.com') На главную
-                        button(type='submit') Войти
-
-                        
-                    
-                    
+                            div.input__box.input__box--password  
+                                input.input.input--password(
+                                  type='password'
+                                  name='password'
+                                  placeholder="Пароль"
+                                )  
+                            div.input__box.input__checkbox
+                                input.input.input--checkbox(type='checkbox' name='check' id='checkbox' checked)
+                                label.label(for='checkbox') Я человек    
+                            div.form__ask Вы точно не робот? 
+                            div.input__box.input__box--radio 
+                                input.input.input--radio(type='radio' name='radio' id='radio1' )
+                                label.label(for='radio1') Да
+                                input.input.input--radio(type='radio' name='radio' id='radio2' )
+                                label.label(for='radio2') Не уверен
+                        .autorization__buttons.flex-box
+                            a.button(href='google.com') На главную
+                            button.button(type='submit') Войти
+            section.autorization
+                        div.my-foto
+                            img.my-foto__img(src="images/repeckiy.jpg", alt="")
+                        div.my-name Репецкий Александр
+                        div.my__text Личный сайт веб разработчика
+                        div.soc
+                            a.soc__link(href="http://", target="_blank")
+                                svg.icon-svg
+                                    <use xlink:href="images/icons/sprite.svg#vk"></use>
+                            a.soc__link(href="http://", target="_blank")
+                                svg.icon-svg
+                                    <use xlink:href="images/icons/sprite.svg#github"></use>
+                            a.soc__link(href="http://", target="_blank")
+                                svg.icon-svg.icon-svg-in
+                                    <use xlink:href="images/icons/sprite.svg#in"></use>
+                        .autorization__buttons.flex-box
+                            a.button(href='google.com') Мои работы
+                            a.button(href='google.com') Обо мне
+                            a.button(href='google.com') Блог
+        include ../common/footer.pug

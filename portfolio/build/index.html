@@ -11,35 +11,54 @@
     <scripts src="/js/common.js" defer>   </scripts>
   </head>
   <body>
-    <div class="containet flex__box"> 
-      <section class="autorization">
-        <h2 class="h2">Авторизуйтесь</h2>
-        <div class="form">
-          <form>
-            <div class="input__box">
-              <div class="input__login">
-                <input type="text" name="login" placeholder="Логин">
+    <div class="wrapper"> 
+      <div class="button__avtorization__wrap">
+        <div class="button__avtorization">Авторизоваться</div>
+      </div>
+      <div class="container flex-box">
+        <section class="autorization autorization__none">
+          <h2 class="h2">Авторизуйтесь </h2>
+          <div class="form">
+            <form>
+              <div class="input-container">
+                <div class="input__box input__box--login">
+                  <input class="input input--login" type="text" name="login" placeholder="Логин">
+                </div>
+                <div class="input__box input__box--password"> 
+                  <input class="input input--password" type="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="input__box input__checkbox">
+                  <input class="input input--checkbox" type="checkbox" name="check" id="checkbox" checked>
+                  <label class="label" for="checkbox">Я человек    </label>
+                </div>
+                <div class="form__ask">Вы точно не робот? </div>
+                <div class="input__box input__box--radio"> 
+                  <input class="input input--radio" type="radio" name="radio" id="radio1">
+                  <label class="label" for="radio1">Да</label>
+                  <input class="input input--radio" type="radio" name="radio" id="radio2">
+                  <label class="label" for="radio2">Не уверен</label>
+                </div>
               </div>
-              <div class="input__passworld">  
-                <input type="password" name="password" placeholder="Пароль">
+              <div class="autorization__buttons flex-box"><a class="button" href="google.com">На главную</a>
+                <button class="button" type="submit">Войти</button>
               </div>
-              <label>
-                <input type="checkbox" name="check" checked>Я человек    
-              </label>
-              <div class="form__ask">Вы точно не робот? </div>
-              <label>
-                <input type="radio" name="radio">Да
-              </label>
-              <label> 
-                <input type="radio" name="radio">Не уверен
-              </label>
-            </div>
-            <div class="autorization__buttons"><a href="google.com">На главную</a>
-              <button type="submit">Войти</button>
-            </div>
-          </form>
-        </div>
-      </section>
+            </form>
+          </div>
+        </section>
+        <section class="autorization">
+          <div class="my-foto"><img class="my-foto__img" src="images/repeckiy.jpg" alt=""></div>
+          <div class="my-name">Репецкий Александр</div>
+          <div class="my__text">Личный сайт веб разработчика</div>
+          <div class="soc"><a class="soc__link" href="http://" target="_blank">
+              <svg class="icon-svg"><use xlink:href="images/icons/sprite.svg#vk"></use></svg></a><a class="soc__link" href="http://" target="_blank">
+              <svg class="icon-svg"><use xlink:href="images/icons/sprite.svg#github"></use></svg></a><a class="soc__link" href="http://" target="_blank">
+              <svg class="icon-svg icon-svg-in"><use xlink:href="images/icons/sprite.svg#in"></use></svg></a></div>
+          <div class="autorization__buttons flex-box"><a class="button" href="google.com">Мои работы</a><a class="button" href="google.com">Обо мне</a><a class="button" href="google.com">Блог</a></div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__text"> <span>&copy; Репецкий Александ | создано с любовью в LoftSchool | 2017</span></div>
+      </footer>
     </div>
   </body>
 </html>
