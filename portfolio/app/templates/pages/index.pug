@@ -2,15 +2,14 @@ extends ../template
 block variables
     - var title = 'Главная'
 block content
-    div.wrapper 
-        div.button__avtorization__wrap
-            div.button__avtorization Авторизоваться
-        div.container.flex-box
-                
-            section.autorization.autorization__none
+    section.start
+        div.start__btn-autorization
+            a.btn-border(href="#") Авторизоваться
+        div.start__autorization.flex-box--column
+            div.autorization.autorization__none
                 h2.h2 Авторизуйтесь 
                 div.form
-                    form
+                    form(id="", method="", action="")
                         div.input-container
                             div.input__box.input__box--login
                                 input.input.input--login(
@@ -36,23 +35,29 @@ block content
                         .autorization__buttons.flex-box
                             a.button(href='google.com') На главную
                             button.button(type='submit') Войти
-            section.autorization
-                        div.my-foto
-                            img.my-foto__img(src="images/repeckiy.jpg", alt="")
+            div.autorization
+                        div.start__foto
+                            div.my-foto
+                                img.my-foto__img(src="images/repeckiy.jpg", alt="")
                         div.my-name Репецкий Александр
                         div.my__text Личный сайт веб разработчика
-                        div.soc
-                            a.soc__link(href="http://", target="_blank")
-                                svg.icon-svg
-                                    <use xlink:href="images/icons/sprite.svg#vk"></use>
-                            a.soc__link(href="http://", target="_blank")
-                                svg.icon-svg
-                                    <use xlink:href="images/icons/sprite.svg#github"></use>
-                            a.soc__link(href="http://", target="_blank")
-                                svg.icon-svg.icon-svg-in
-                                    <use xlink:href="images/icons/sprite.svg#in"></use>
+                        div.start__socials
+                            ul.social
+                                - 
+                                   var items = [
+                                     ['vk', 'https://vk.com/id10183899'],
+                                     ['github', 'https://github.com/Aleksrepetskiy'],
+                                     ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
+                                   ]
+                                each item in items
+                                    li.social__item
+                                        a(href=`${item[1]}` class=`social__link social__link--${item[0]}`)
+                                            svg(class=`icon-svg icon-svg--${item[0]}`)
+                                                use(xlink:href=`images/icons/sprite.svg#${item[0]}`) 
                         .autorization__buttons.flex-box
                             a.button(href='google.com') Мои работы
                             a.button(href='google.com') Обо мне
                             a.button(href='google.com') Блог
-        include ../common/footer.pug
+            div.start__copyrating
+                .copyrating 
+                    span &copy; Репецкий Александ | создано с любовью в LoftSchool | 2017

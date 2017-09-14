@@ -11,15 +11,13 @@
     <scripts src="/js/common.js" defer>   </scripts>
   </head>
   <body>
-    <div class="wrapper"> 
-      <div class="button__avtorization__wrap">
-        <div class="button__avtorization">Авторизоваться</div>
-      </div>
-      <div class="container flex-box">
-        <section class="autorization autorization__none">
+    <section class="start">
+      <div class="start__btn-autorization"><a class="btn-border" href="#">Авторизоваться</a></div>
+      <div class="start__autorization flex-box--column">
+        <div class="autorization autorization__none">
           <h2 class="h2">Авторизуйтесь </h2>
           <div class="form">
-            <form>
+            <form id="" method="" action="">
               <div class="input-container">
                 <div class="input__box input__box--login">
                   <input class="input input--login" type="text" name="login" placeholder="Логин">
@@ -44,21 +42,35 @@
               </div>
             </form>
           </div>
-        </section>
-        <section class="autorization">
-          <div class="my-foto"><img class="my-foto__img" src="images/repeckiy.jpg" alt=""></div>
+        </div>
+        <div class="autorization">
+          <div class="start__foto">
+            <div class="my-foto"><img class="my-foto__img" src="images/repeckiy.jpg" alt=""></div>
+          </div>
           <div class="my-name">Репецкий Александр</div>
           <div class="my__text">Личный сайт веб разработчика</div>
-          <div class="soc"><a class="soc__link" href="http://" target="_blank">
-              <svg class="icon-svg"><use xlink:href="images/icons/sprite.svg#vk"></use></svg></a><a class="soc__link" href="http://" target="_blank">
-              <svg class="icon-svg"><use xlink:href="images/icons/sprite.svg#github"></use></svg></a><a class="soc__link" href="http://" target="_blank">
-              <svg class="icon-svg icon-svg-in"><use xlink:href="images/icons/sprite.svg#in"></use></svg></a></div>
+          <div class="start__socials">
+            <ul class="social">
+              <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/id10183899">
+                  <svg class="icon-svg icon-svg--vk">
+                    <use xlink:href="images/icons/sprite.svg#vk"> </use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--github" href="https://github.com/Aleksrepetskiy">
+                  <svg class="icon-svg icon-svg--github">
+                    <use xlink:href="images/icons/sprite.svg#github"> </use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--in" href="https://www.linkedin.com/in/aleksrepetskiy/">
+                  <svg class="icon-svg icon-svg--in">
+                    <use xlink:href="images/icons/sprite.svg#in"> </use>
+                  </svg></a></li>
+            </ul>
+          </div>
           <div class="autorization__buttons flex-box"><a class="button" href="google.com">Мои работы</a><a class="button" href="google.com">Обо мне</a><a class="button" href="google.com">Блог</a></div>
-        </section>
+        </div>
+        <div class="start__copyrating">
+          <div class="copyrating"> <span>&copy; Репецкий Александ | создано с любовью в LoftSchool | 2017</span></div>
+        </div>
       </div>
-      <footer class="footer">
-        <div class="footer__text"> <span>&copy; Репецкий Александ | создано с любовью в LoftSchool | 2017</span></div>
-      </footer>
-    </div>
+    </section>
   </body>
 </html>

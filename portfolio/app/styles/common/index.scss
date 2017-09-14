@@ -1,14 +1,19 @@
 /*INDEX*/
-.wrapper  {
+.start {
+	position: relative;
+}
+.start__btn-autorization {
+	position: absolute;
+	top: 20px;
+	right: 100px;
+}
+.start__autorization {
 	background: url('../images/water.jpg') no-repeat;
 	background-size: cover;
 	min-width: 100vw;
 	min-height: 100vh;
 	padding-bottom: 20px;
 	box-sizing: border-box;
-}
-.container {
-
 }
 .autorization {
 	min-width: 380px;
@@ -17,6 +22,7 @@
 	background: rgba(18, 38, 32, .6);
 	border-radius: 5px;
 	color: $white;
+	margin: auto 0;
 }
 .autorization__none {
 	display: none;
@@ -130,11 +136,13 @@
 .button:hover{
 	background-color: $green;
 }
-.my-foto {
+.start__foto {
 	max-width: 140px;
+	margin: 40px auto 20px auto;
+}
+.my-foto {
 	border-radius: 100%;
 	overflow: hidden;
-	margin: 40px auto 20px auto;
 }
 .my__text {
 	margin: 10px 0;
@@ -146,41 +154,14 @@
 	font-size: 28px;
 	font-weight: 500;
 }
-.soc {
+.start__socials {
 	margin: 40px 0 40px 0;
 }
-.soc__link {
-	text-decoration: none;
-	display: inline-block;
-	margin: 0 10px;
-}
-.icon-svg {
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-	fill: $litegray;
-	cursor: pointer;
-}
-.icon-svg-in {
-	width: 25px;
-	height: 25px;
-}
-.icon-svg:hover {
-	fill: $green;
-}
-.button__avtorization__wrap {
-	text-align: right;
-	padding: 20px 100px;
-}
-.button__avtorization {
-	display: inline-block;
-	padding: 10px 25px;
+.start__copyrating {
 	color: $white;
-	border: 1px solid $white;
-	border-radius: 20px;
-	cursor: pointer;
-}
-.button__avtorization:hover {
-	border: 1px solid $litegreen;
-	background-color: $green;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
 }

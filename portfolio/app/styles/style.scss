@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+    box-sizing: border-box;
+}
 .h1 {
     font-size: 63px;
     line-height: 70px;
@@ -37,6 +40,13 @@ body {
 		background-color: #fff;
 	}
 }
+p {
+    font-size: 16px;
+    font-family: $default-font;
+    padding: 0;
+    margin: 0;
+    color: $gray;
+}
 img {
 	height: auto;
 	max-width: 100%;
@@ -54,6 +64,45 @@ img {
 	align-items: center;
     flex-direction: column;
 }
+.btn-border {
+	display: inline-block;
+	padding: 10px 25px;
+	color: $white;
+	border: 1px solid $white;
+	border-radius: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-border:hover {
+	border: 1px solid $litegreen;
+	background-color: $green;
+}
+.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social__item {
+	display: inline-block;
+    margin: 0 10px;
+}
+.social__link {
+    display: block;
+}
+.icon-svg {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	fill: $litegray;
+	cursor: pointer;
+}
+.icon-svg--in {
+    width: 25px;
+	height: 25px;
+}
+.icon-svg:hover {
+	fill: $green;
+}
 .footer {
 	color: $white;
 	text-align: center;
@@ -62,6 +111,4 @@ img {
 	left: 0;
 	right: 0;
 }
-
-
 @import 'common/index';
