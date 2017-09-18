@@ -1,5 +1,118 @@
+@import 'common/fonts.scss';
+@import 'common/font-awesome.min';
+@import './node_modules/normalize_css/normalize.css';
+@import 'common/variables.scss';
+@import 'common/menu';
 body {
-    margin: 10px;
-    background: #ccc;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  font-family: $default-font;
+  margin: 0;
+  padding: 0;
 }
-@import 'common/menu'
+* {
+    box-sizing: border-box;
+}
+.h1 {
+    font-size: 63px;
+    line-height: 70px;
+    font-family: sansusWebissimo, sans-serif;
+	text-transform: uppercase;
+}
+.h2 {
+    font-size: 35px;
+    color: $white;
+    line-height: 40px;
+	position: relative;
+    font-family: sansusWebissimo, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -45px;
+		height: 3px;
+		width: 90px;
+		bottom: -29px;
+		background-color: #fff;
+	}
+}
+p {
+    font-size: 16px;
+    font-family: $default-font;
+    padding: 0;
+    margin: 0;
+    color: $gray;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.flex-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.flex-box--column {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+.btn-border {
+	display: inline-block;
+	padding: 10px 25px;
+	color: $white;
+	border: 1px solid $white;
+	border-radius: 20px;
+	cursor: pointer;
+	text-decoration: none;
+    background-color: transparent;
+}
+.btn-border:hover {
+	border: 1px solid $litegreen;
+	background-color: $green;
+}
+.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social__item + .social__item {
+    margin-left: 10px;
+}
+.social__link {
+    display: block;
+}
+.icon-svg {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	fill: $litegray;
+	cursor: pointer;
+}
+.icon-svg--in {
+    width: 25px;
+	height: 25px;
+}
+.icon-svg:hover {
+	fill: $green;
+}
+.footer {
+	color: $white;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+@import 'common/index';

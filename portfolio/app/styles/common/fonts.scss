@@ -1,0 +1,12 @@
+@import './app/styles/mixins/font-face';
+
+@include font-face("roboto", "./app/fonts/robotoBold/roboto-bold-webfont", bold)
+@include font-face("roboto", "./app/fonts/robotoBoldItalic/roboto-bolditalic-webfont", bold, italic)
+@include font-face("roboto", "./app/fonts/robotoRegular/roboto-regular-webfont")
+@include font-face("roboto", "./app/fonts/robotoItalic/roboto-italic-webfont",italic)
+@include font-face("roboto", "./app/fonts/robotoLight/roboto-light-webfont", 300)
+@include font-face("roboto", "./app/fonts/robotoLightItalic/roboto-lightitalic-webfont", 300, italic)
+@include font-face("roboto", "./app/fonts/robotoMedium/roboto-medium-webfont", 600)
+@include font-face("roboto", "./app/fonts/robotoMediumItalic/roboto-mediumitalic-webfont", 600, italic)
+
+@include font-face("sansusWebissimo", "./app/fonts/SansusWebissimo/roboto-regular-webfont")
