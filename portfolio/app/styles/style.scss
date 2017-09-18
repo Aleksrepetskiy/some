@@ -28,6 +28,7 @@ body {
     font-family: sansusWebissimo, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
+    margin: 0 0 30px 0;
 	&::after {
 		content: '';
 		display: block;
@@ -72,6 +73,7 @@ img {
 	border-radius: 20px;
 	cursor: pointer;
 	text-decoration: none;
+    background-color: transparent;
 }
 .btn-border:hover {
 	border: 1px solid $litegreen;
@@ -81,10 +83,12 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.social__item {
-	display: inline-block;
-    margin: 0 10px;
+.social__item + .social__item {
+    margin-left: 10px;
 }
 .social__link {
     display: block;
