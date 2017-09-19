@@ -65,7 +65,7 @@
     bottom: 0;
 }
 .about__triangle--right {
-    top: -163px;
+    top: -164px;
 }
 .about__right-title, .about__right-description, .about__right-content, .about__left-title, .about__left-description, .about__left-content {
     position: relative;
@@ -79,4 +79,66 @@
 }
 .about__right-title {
     text-align: center;
+}
+.circle__second--HTML5 {
+    stroke-dasharray: 240 282.6;
+}
+.circle__second--CSS3 {
+    stroke-dasharray: 260 282.6;
+}
+.circle__second--JavaScript {
+    stroke-dasharray: 100 282.6;
+}
+.circle__second--PHP {
+    stroke-dasharray: 50 282.6;
+}
+.circle__second--mySQL {
+    stroke-dasharray: 10 282.6;
+}
+.circle__second--Node {
+    stroke-dasharray: 150 282.6;
+}
+.circle__second--Mongo {
+    stroke-dasharray: 10 282.6;
+}
+.circle__second--Git {
+    stroke-dasharray: 180 282.6;
+}
+.circle__second--Gulp {
+    stroke-dasharray: 200 282.6;
+}
+.circle__second--Bower {
+    stroke-dasharray: 200 282.6;
+}
+.contacts-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacts-row__icon {
+    width: 22px;
+    height: 30px;
+    fill: $green;
+    margin-right: 15px;
+}
+.map {
+    position: relative;
+}
+.map__data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f4f5f0;
+    border-radius: 10px;
+}
+.contacts__title {
+    text-align: center;
+}
+.contacts {
+    padding: 30px;
+    min-width: 380px;
+}
+.contacts__item {
+    margin-bottom: 20px;
 }

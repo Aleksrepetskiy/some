@@ -69,20 +69,31 @@ block content
                             div.skills-row
                                 div.skills-row__title Frontend
                                 ul.skills-row__list
-                                    each skill in ['Html5', 'css3', 'JavaScript']
+                                    each skill in ['HTML5', 'CSS3', 'JavaScript']
                                         li.skills-row__item
                                             div.skill
-                                                svg.skill__cicle
+                                                svg.skill__circle(viewBox="0 0 110 110")
+                                                    circle( data-v-7aa2d04c="" r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                                                    circle(data-v-7aa2d04c="" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class=`circle__second circle__second--${skill}`)
                                                 .skill__title #{skill}
                         li.skills-list__item
                             div.skills-row
                                 div.skills-row__title Backend
                                 ul.skills-row__list
-                                    each skill in ['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db']
+                                    - 
+                                       var skill = [
+                                         ['PHP', 'PHP'],
+                                         ['mySQL', 'mySQL'],
+                                         ['Node.js  npm', 'Node'],
+                                         ['Mongo.db', 'Mongo'],
+                                       ]
+                                    each item in skill
                                         li.skills-row__item
                                             div.skill
-                                                svg.skill__cicle
-                                                .skill__title #{skill}
+                                                svg.skill__circle(viewBox="0 0 110 110")
+                                                    circle( data-v-7aa2d04c="" r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                                                    circle(data-v-7aa2d04c="" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class=`circle__second circle__second--${item[1]}`)
+                                                .skill__title #{item[0]}
                         li.skills-list__item
                             div.skills-row
                                 div.skills-row__title Workflow
@@ -90,11 +101,14 @@ block content
                                     each skill in ['Git', 'Gulp', 'Bower']
                                         li.skills-row__item
                                             div.skill
-                                                svg.skill__cicle
+                                                svg.skill__circle(viewBox="0 0 110 110")
+                                                    circle( data-v-7aa2d04c="" r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                                                    circle(data-v-7aa2d04c="" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class=`circle__second circle__second--${skill}`)
                                                 .skill__title #{skill}
             
     section.section.map
         .google-map
+            img(src="images/map.jpg", alt="")
         .map__data
             .contacts
                 .contacts__title
@@ -103,13 +117,14 @@ block content
                     -
                         var contacts = [
                         ['skype', 'aleksrepetskiy'],
-                        ['mail', 'repetskiyaleksandr@gmail.com'],
-                        ['phone', '+38063 737 77 28'],
-                        ['mark', 'Киев'],
+                        ['envelope2', 'repetskiyaleksandr@gmail.com'],
+                        ['phone2', '+38063 737 77 28'],
+                        ['map_marker', 'Киев'],
                         ]
-                    each contact in contacts
-                           li.contacts__item
-                               .contacts-row
-                                   .contacts-row__icon #{contact[0]}
-                                   .contacts-row__content #{contact[1]}
+                    each item in contacts
+                            li.contacts__item
+                                .contacts-row
+                                    svg(class=`contacts-row__icon contacts-row__icon--${item[0]}`)
+                                       use(xlink:href=`images/icons/sprite.svg#${item[0]}`)
+                                    .contacts-row__content.text #{item[1]}
     include ../common/footer.pug
