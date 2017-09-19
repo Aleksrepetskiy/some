@@ -10,9 +10,18 @@ body {
   font-family: $default-font;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 * {
     box-sizing: border-box;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
 .h1 {
     font-size: 63px;
@@ -24,7 +33,7 @@ body {
     font-size: 35px;
     color: $white;
     line-height: 40px;
-	position: relative;
+	  position: relative;
     font-family: sansusWebissimo, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -39,18 +48,67 @@ body {
 		width: 90px;
 		bottom: -29px;
 		background-color: #fff;
-	}
+  }
 }
 p {
     font-size: 16px;
     font-family: $default-font;
+    line-height: 24px;
     padding: 0;
     margin: 0;
     color: $gray;
+    margin-bottom: 20px;
+}
+.block-title {
+    display: inline-block;
+    position: relative;
+    color: $darkgray;
+    font-family: sansusWebissimo, sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    text-align: center;
+    &::after {
+  		content: '';
+  		display: block;
+  		position: absolute;
+  		left: 50%;
+  		margin-left: -45px;
+  		height: 3px;
+  		width: 90px;
+  		bottom: -29px;
+  		background-color: $darkgray;
+    }
+}
+.block-subtitle {
+    display: inline-block;
+    position: relative;
+    color: $darkgray;
+    font-family: sansusWebissimo, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-bottom:64px;
+    text-align: center;
+    &::after {
+  		content: '';
+  		display: block;
+  		position: absolute;
+  		left: 50%;
+  		margin-left: -45px;
+  		height: 3px;
+  		width: 90px;
+  		bottom: -29px;
+  		background-color: $darkgray;
+    }
 }
 img {
 	height: auto;
 	max-width: 100%;
+    display: block;
 }
 .flex-box {
 	display: flex;
@@ -101,11 +159,104 @@ img {
 	cursor: pointer;
 }
 .icon-svg--in {
-    width: 25px;
-	height: 25px;
+	height: 22px;
 }
 .icon-svg:hover {
 	fill: $green;
+}
+.user {
+    text-align: center;
+}
+.user__img {
+    border-radius: 100%;
+    overflow: hidden;
+	max-width: 140px;
+    margin: 0 auto;
+}
+.user__name {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41px;
+    color: $white;
+}
+.user__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+}
+.user-description__title {
+    text-align: center;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+}
+.hamburger {
+    width: 40px;
+    height: 35px;
+    background: url('../images/icons/hamburger.svg');
+	cursor: pointer;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.87;
+	background-color: #6c9c5a;
+	z-index: 2;
+}
+.menu::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 35px;
+    background: url('../images/icons/hamburger.svg');
+    top: 30px;
+    right: 30px;
+    position: absolute;
+
+}
+.menu__item {
+    margin-bottom: 80px;
+}
+.menu__link {
+    text-decoration: none;
+	color: white;
+	font-size: 45px;
+    line-height: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+    font-family: sansusWebissimo, sans-serif;
+}
+.triangle {
+    width: 100%
+}
+.skills-row__title {
+  color: $gray;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.skills-row__list {
+    display: flex;
+}
+.skill__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    color: $green;
+
 }
 .footer {
 	color: $white;
@@ -116,3 +267,4 @@ img {
 	right: 0;
 }
 @import 'common/index';
+@import 'common/about';

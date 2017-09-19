@@ -1,4 +1,41 @@
 footer.footer
+    div.footer__row
+        div.footer__col.footer__col-left
+            .footer__text.text-content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+        div.footer__col.footer__col-center
+            div.footer__menu
+                nav.nav
+                    ul.nav__list
+                        - 
+                            var items = [
+                            ['Мои работы', '/portfolio.html'],
+                            ['Обо мне', '/about.html'],
+                            ['Блог', '/blog.html'],
+                            ['Авторизация', '/index.html'],
+                            ]
+                        each item in items
+                            li.nav__item
+                                a.nav__link(href=`${item[1]}`, target="_blank") #{item[0]}
+                div.footer__social
+                    ul.social
+                        - 
+                            var items = [
+                            ['vk', 'https://vk.com/id10183899'],
+                            ['github', 'https://github.com/Aleksrepetskiy'],
+                            ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
+                            ]
+                        each item in items
+                                li.social__item
+                                    a(href=`${item[1]}` class=`social__link social__link--${item[0]}`)
+                                        svg(class=`icon-svg icon-svg--${item[0]}`)
+                                            use(xlink:href=`images/icons/sprite.svg#${item[0]}`) 
+    div.footer__col.footer__col-right
+        .footer__text.text-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+    div.footer__row
+        div.footer__col
+            .copyrating 
+                span &copy; Репецкий Александ | создано с любовью в LoftSchool | 2017
+        
     
-    .copyrating 
-        span &copy; Репецкий Александ | создано с любовью в LoftSchool | 2017

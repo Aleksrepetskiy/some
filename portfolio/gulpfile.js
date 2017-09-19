@@ -139,7 +139,7 @@ exports.clean     = clean;
 exports.svg       = svg;
 
 gulp.task('default', gulp.series(
-    gulp.parallel(styles, templates, scripts, images, fonts),
+    gulp.parallel(styles, templates, scripts, images, fonts, svg),
     gulp.parallel(watch, server)
 ));
 
