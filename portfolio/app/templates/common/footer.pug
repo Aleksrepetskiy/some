@@ -1,3 +1,16 @@
+- 
+    var page = [
+    ['Мои работы', '/portfolio.html'],
+    ['Обо мне', '/about.html'],
+    ['Блог', '/blog.html'],
+    ['Авторизация', '/index.html'],
+    ]
+    var soc = [
+    ['vk', 'https://vk.com/id10183899'],
+    ['github', 'https://github.com/Aleksrepetskiy'],
+    ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
+    ]
+    
 footer.footer
     div.footer__row.footer__row--grey
         div.footer__col.footer__col-left
@@ -7,25 +20,12 @@ footer.footer
             div.footer__menu
                 nav.nav
                     ul.nav__list
-                        - 
-                            var items = [
-                            ['Мои работы', '/portfolio.html'],
-                            ['Обо мне', '/about.html'],
-                            ['Блог', '/blog.html'],
-                            ['Авторизация', '/index.html'],
-                            ]
-                        each item in items
+                        each item in page
                             li.nav__item
                                 a.nav__link(href=`${item[1]}`, target="_blank") #{item[0]}
                 div.footer__social
                     ul.social
-                        - 
-                            var items = [
-                            ['vk', 'https://vk.com/id10183899'],
-                            ['github', 'https://github.com/Aleksrepetskiy'],
-                            ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
-                            ]
-                        each item in items
+                        each item in soc
                                 li.social__item
                                     a(href=`${item[1]}` class=`social__link social__link--${item[0]}`)
                                         svg(class=`icon-svg icon-svg--${item[0]}`)

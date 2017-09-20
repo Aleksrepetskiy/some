@@ -6,12 +6,12 @@ block content
         div.hero__social
             ul.social
                 - 
-                    var items = [
+                    var soc = [
                     ['vk', 'https://vk.com/id10183899'],
                     ['github', 'https://github.com/Aleksrepetskiy'],
                     ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
                     ]
-                each item in items
+                each item in soc
                         li.social__item
                             a(href=`${item[1]}` class=`social__link social__link--${item[0]}`)
                                 svg(class=`icon-svg icon-svg--${item[0]}`)
