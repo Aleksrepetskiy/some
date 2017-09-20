@@ -60,13 +60,19 @@ p {
     margin-bottom: 20px;
 }
 .text {
+    font-size: 16px;
+    font-family: $default-font;
+    line-height: 24px;
+    color: $gray;
+}
+.text-content {
+  color: $white;
   font-size: 16px;
-  font-family: $default-font;
+  font-weight: 300;
   line-height: 24px;
-  color: $gray;
+
 }
 .block-title {
-    display: inline-block;
     position: relative;
     color: $darkgray;
     font-family: sansusWebissimo, sans-serif;
@@ -144,13 +150,24 @@ img {
 	border: 1px solid $litegreen;
 	background-color: $green;
 }
+.arrow-down {
+    width: 25px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    background: url(../images/icons/arrow_down.svg) no-repeat;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+
+}
 .social {
     margin: 0;
     padding: 0;
     list-style: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: flex-start;
 }
 .social__item + .social__item {
     margin-left: 10px;
@@ -248,15 +265,11 @@ img {
 .triangle {
     width: 100%
 }
-.skills-row__title {
-  color: $gray;
-  font-family: Roboto;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 32px;
-}
 .skills-row__list {
     display: flex;
+}
+.skills-list__item+.skills-list__item{
+  margin-top: 30px;
 }
 .skill__title {
     position: absolute;
@@ -270,11 +283,22 @@ img {
     color: $green;
 
 }
+.skills-row__title {
+  color: $gray;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
 .skills-row__item {
   position: relative;
   width: 110px;
   height: 110px;
-  margin: 10px;
+}
+.skills-row__item + .skills-row__item {
+    margin-left: 40px;
+
 }
 .skill__circle {
   fill: none;
@@ -287,16 +311,21 @@ img {
 .circle__second {
   stroke: #1bb696;
 }
-.footer {
-	color: $white;
-	text-align: center;
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-}
 .footer .icon-svg:hover {
   fill: $white;
+}
+.footer .text-content p {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.footer__social {
+    margin-top: 20px;
+}
+blockquote {
+    margin: 0;
+    font-style: italic;
+    opacity: 0.5;
 }
 .nav__list {
   display: flex;
@@ -310,11 +339,33 @@ img {
   text-decoration: none;
   white-space: nowrap;
 }
+.footer {
+    color: $white;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
 .footer__row {
   display: flex;
 }
 .footer__col {
   width: 33%;
+  padding: 0 30px;
+  text-align: left;
+}
+.footer__col + .footer__col {
+  border-left: 1px solid rgba(55, 62, 66, 0.85);
+}
+.footer__row--grey {
+    padding: 25px 0;
+    background-color: rgba(55, 62, 66, 0.85);
+}
+.footer__row--green {
+    background-color: rgba(108, 156, 90, 0.85);
+    padding: 10px 0;
+    justify-content: center;
 }
 @import 'common/index';
 @import 'common/about';

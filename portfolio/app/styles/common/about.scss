@@ -42,13 +42,14 @@
 .about {
     display: flex;
     position: relative;
+    padding-bottom: 30px;
 }
 .about__left, .about__right {
     position: relative;
     width: 50%;
     z-index: 0;
     display: flex;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 .about__left {
     background-color: #ebefe2;
@@ -65,7 +66,7 @@
     bottom: 0;
 }
 .about__triangle--right {
-    top: -164px;
+    // top: -164px;
 }
 .about__right-title, .about__right-description, .about__right-content, .about__left-title, .about__left-description, .about__left-content {
     position: relative;
@@ -74,6 +75,23 @@
 .about__left-title, .about__left-content {
     width: 50%;
 }
+.about__left-title {
+    position: relative;
+}
+.about__title-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-image: url(../images/icons/about_header.svg);
+    background-size: cover;
+    width: 401px;
+    height: 142px;
+    opacity: .1;
+}
+
+
 .user-description__img {
     margin-bottom: 30px;
 }
@@ -129,7 +147,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: #f4f5f0;
+    background-color: rgba(244, 245, 240, 0.85);
     border-radius: 10px;
 }
 .contacts__title {
