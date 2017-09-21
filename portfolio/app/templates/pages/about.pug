@@ -2,43 +2,7 @@ extends ../template
 block variables
     - var title = 'Обо мне'
 block content
-    section.section.hero.flex-box
-        div.hero__social
-            ul.social
-                - 
-                    var soc = [
-                    ['vk', 'https://vk.com/id10183899'],
-                    ['github', 'https://github.com/Aleksrepetskiy'],
-                    ['in', 'https://www.linkedin.com/in/aleksrepetskiy/'],
-                    ]
-                each item in soc
-                        li.social__item
-                            a(href=`${item[1]}` class=`social__link social__link--${item[0]}`)
-                                svg(class=`icon-svg icon-svg--${item[0]}`)
-                                    use(xlink:href=`images/icons/sprite.svg#${item[0]}`) 
-        div.hero__menu.hamburger
-            ul.menu(style="display:none")
-                - 
-                    var itemk = [
-                    ['Мои работы', '/portfolio.html'],
-                    ['Обо мне', '/about.html'],
-                    ['Блог', '/blog.html'],
-                    ['Авторизация', '/index.html'],
-                    ]
-                each item in itemk
-                        li.menu__item
-                            a.menu__link(href=`${item[1]}`, target="_blank") #{item[0]}
-        div.hero__title
-            div.section__title
-                img.section__title__pic(src="images/portfolio_header.png", alt="")
-            div.hero__user.user
-                div.user__img
-                    img(src="images/repeckiy.jpg", alt="")
-                div.user__description
-                    div.user__name Репецкий Александр
-                    div.user__info Личный сайт веб разработчика
-        div.hero__scroll-btn
-            button(type="button").arrow-down 
+    include ../common/header.pug
     section.section.about
         div.about__left
             div.about__triangle.about__triangle--left
@@ -59,7 +23,7 @@ block content
         div.about__right
             div.about__triangle.about__triangle--right
                 svg.triangle.triangle_fill_beige(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875.331 1009.986")
-                    path(fill-rule="evenodd" clip-rule="evenodd" fill="#f4f5f0" d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z")
+                    path(fill-rule="evenodd" clip-rule="evenodd" fill="#f4f5f0" d="M0,159.008L900.331,0l-0.005,1015.986H0V155.008z")
             div.about__right-title
                 div.block-subtitle Чем я могу быть вам полезен
             div.about__right-description.text-content
