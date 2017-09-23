@@ -1,7 +1,12 @@
 .blog {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     padding: 65px 0;
     background-color: $liteyellow3;
-    position: relative;
+    padding-bottom: 185px;
+
 }
 .blog-decor__triang {
     width: 50%;
@@ -11,4 +16,42 @@
 }
 .blog-decor__triang--right {
     right: 0;
+}
+.blog__menu {
+    width: 30%;
+    text-align: right;
+    margin-right: 6%;
+}
+.blog__articles {
+    width: 64%;
+    max-width: 900px;
+    padding-right: 20px;
+}
+.articles__item  {
+    // padding: 15px 20px;
+}
+.articles__link {
+    display: block;
+    color: $gray;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.articles__link.active {
+    color: $green;
+    border-right: 3px solid $green;
+}
+.article__title {
+    color: $gray;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.article__time {
+    margin-bottom: 30px;
+}
+.article + .article::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: $litegray2;
+    margin: 67px 0 56px 0;
 }
