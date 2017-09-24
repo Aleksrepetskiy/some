@@ -1,0 +1,35 @@
+.portfolio {
+
+}
+.portfolio__content {
+    position: relative;
+    background: #f4f5f0 url(../images/portfolio__bg.png) 0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 184px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+.portfolio__form {
+    max-width: 380px;
+    background: rgba(18,38,32,0.6);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.portfolio__rewiews {
+    margin-bottom: 60px;
+}
+.portfolio__form .block-subtitle {
+    display: block;
+    max-width: none;
+    padding:  0 20px;
+}
+.portfolio__form .input-container{
+    padding-top: 0;
+}
+.portfolio__arrow {
+    text-align: center;
+    margin: 65px 0;
+}

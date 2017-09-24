@@ -17,18 +17,6 @@ body {
 * {
 	box-sizing: border-box;
 }
-
-li,
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-}
-
 .h1 {
 	font-size: 63px;
 	line-height: 70px;
@@ -58,6 +46,11 @@ a {
 		background-color: #fff;
 	}
 }
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
 p {
 	font-size: 16px;
@@ -68,6 +61,11 @@ p {
 	color: $gray;
 	margin-bottom: 20px;
 	text-align: justify;
+}
+.container {
+	max-width: 820px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 .text {
@@ -180,6 +178,17 @@ img {
 	cursor: pointer;
 	z-index: 3;
 	position: relative;
+}
+.arrow-up {
+	width: 25px;
+	height: 16px;
+	background-color: transparent;
+	border: none;
+	background: url("../images/icons/arrow_down.svg") no-repeat;
+	cursor: pointer;
+	z-index: 3;
+	position: relative;
+	transform: rotate(180deg);
 }
 
 .social {
@@ -395,6 +404,80 @@ blockquote {
 	color: $litegreen;
 	font-size: 16px;
 }
+.title-bg__about{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-image: url(../images/icons/about_header.svg);
+    background-size: cover;
+    width: 401px;
+    height: 142px;
+    opacity: .1;
+}
+.title-bg__works{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-image: url(../images/icons/works_header.svg);
+    background-size: cover;
+    width: 401px;
+    height: 142px;
+    opacity: .1;
+}
+.input-container {
+	padding: 10px 20px 20px 20px;
+}
+.input__box+.input__box {
+	margin-top: 20px;
+}
+.form__ask {
+	margin: 20px 0;
+}
+.input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 14px 20px;
+	color: #373e42;
+	font-family: $default-font;
+	font-size: 16px;
+	border: none;
+	border-radius: 25px;
+}
+.rewiews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rewiew {
+	width: 50%;
+}
+.rewiew+.rewiew{
+	margin-left: 20px;
+}
+.rewiew__foto img {
+	margin: 0 auto;
+}
+.rewiew__text {
+	color: $gray;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 26px;
+}
+.rewiew__signature  {
+	margin-top: 30px;
+}
+.rewiew__name {
+	color: $green;
+	font-weight: 600;
+	line-height: 26px;
+}
+.rewiew__signature {
+	text-align: center;
+}
 
 .footer {
 	color: $white;
@@ -432,3 +515,4 @@ blockquote {
 @import 'common/index';
 @import 'common/about';
 @import 'common/blog';
+@import 'common/portfolio';

@@ -27,12 +27,6 @@
 .autorization__none {
 	display: none;
 }
-.input-container {
-	padding: 10px 20px 0 20px;
-}
-.input__box, .form__ask {
-	margin: 20px 0;
-}
 .input__box--login, .input__box--password {
 	position: relative;
 	margin-bottom: 20px;
@@ -54,14 +48,7 @@
 	content: url('../images/icons/password.svg');
 }
 .input--login, .input--password {
-	width: 100%;
-	box-sizing: border-box;
 	padding: 14px 0 14px 60px;
-	color: #373e42;
-	font-family: $default-font;
-	font-size: 16px;
-	border: none;
-	border-radius: 50px;
 }
 .input, .label{
 	vertical-align: middle;
