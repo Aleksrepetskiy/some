@@ -5,14 +5,15 @@
     position: relative;
     background: #f4f5f0 url(../images/portfolio__bg.png) 0 0 no-repeat;
     background-size: cover;
-    padding-bottom: 184px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    padding: 70px 0 184px 0;
+}
+.portfolio__title {
+    max-width: 450px;
+    margin: 0 auto;
 }
 .portfolio__form {
     max-width: 380px;
-    background: rgba(18,38,32,0.6);
+    background: rgba(224,224,220,0.6);
     -webkit-border-radius: 5px;
     border-radius: 5px;
     margin: 0 auto;

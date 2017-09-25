@@ -449,14 +449,19 @@ blockquote {
 }
 .rewiews {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: stretch;
 }
 .rewiew {
 	width: 50%;
+	display: flex;
+	flex-direction: column;
 }
 .rewiew+.rewiew{
 	margin-left: 20px;
+}
+.rewiew__foto {
+	margin-bottom: 20px;
 }
 .rewiew__foto img {
 	margin: 0 auto;
@@ -466,6 +471,16 @@ blockquote {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 26px;
+	position: relative;
+	margin-bottom: auto;
+}
+.rewiew__text::before{
+	content: '\201c';
+	font-size: 200px;
+	position: absolute;
+	top: 45px;
+	left: -22px;
+	opacity: 0.1;
 }
 .rewiew__signature  {
 	margin-top: 30px;
