@@ -6,7 +6,7 @@ block content
         div.start__btn-autorization
             button.btn-border(href="#") Авторизоваться
         div.start__autorization.flex-box
-            div.autorization.autorization__none
+            div.autorization
                 h2.h2 Авторизуйтесь 
                 div.form
                     form(id="", method="", action="")
@@ -25,7 +25,7 @@ block content
                                 )  
                             div.input__box.input__checkbox
                                 input.input.input--checkbox(type='checkbox' name='check' id='checkbox' checked)
-                                label.label(for='checkbox') Я человек    
+                                label.label(for='checkbox') Я человек 
                             div.form__ask Вы точно не робот? 
                             div.input__box.input__box--radio 
                                 input.input.input--radio(type='radio' name='radio' id='radio1' )
@@ -35,7 +35,7 @@ block content
                         .autorization__buttons.flex-box
                             a.button(href='google.com') На главную
                             button.button(type='submit') Войти
-            div.autorization
+            div.autorization.autorization__none
                         div.start__foto
                             div.my-foto
                                 img.my-foto__img(src="images/repeckiy.jpg", alt="")
@@ -60,4 +60,6 @@ block content
                             a.button(href='/blog.html') Блог
         div.start__copyrating
             .copyrating 
-                span &copy; Репецкий Александ | создано с любовью в LoftSchool | 2017
+                span.copyrating__line.copyrating__line--name &copy; Репецкий Александ
+                span.copyrating__line создано с любовью в LoftSchool
+                span 2017

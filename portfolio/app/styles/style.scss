@@ -13,6 +13,9 @@ body {
 	padding: 0;
 	position: relative;
 }
+.wrapper {
+	min-width: 320px;
+}
 
 * {
 	box-sizing: border-box;
@@ -32,17 +35,14 @@ body {
 	font-family: sansusWebissimo, sans-serif;
 	text-transform: uppercase;
 	font-weight: 400;
-	margin: 0 0 30px;
+	margin: 0;
 
 	&::after {
 		content: '';
 		display: block;
-		position: absolute;
-		left: 50%;
-		margin-left: -45px;
+		margin: 25px auto;
 		height: 3px;
 		width: 90px;
-		bottom: -29px;
 		background-color: #fff;
 	}
 }
@@ -115,19 +115,16 @@ p {
 	font-weight: bold;
 	line-height: 37px;
 	text-transform: uppercase;
-	margin-bottom: 64px;
+	margin: 0;
 	text-align: center;
 	max-width: 280px;
 
 	&::after {
 		content: '';
 		display: block;
-		position: absolute;
-		left: 50%;
-		margin-left: -45px;
+		margin: 30px auto;
 		height: 3px;
 		width: 90px;
-		bottom: -29px;
 		background-color: $darkgray;
 	}
 }
@@ -488,42 +485,11 @@ blockquote {
 .rewiew__signature {
 	text-align: center;
 }
-
-.footer {
-	color: $white;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.footer__row {
-	display: flex;
-}
-
-.footer__col {
-	width: 33%;
-	padding: 0 30px;
-	text-align: left;
-}
-
-.footer__col + .footer__col {
-	border-left: 1px solid rgba(55, 62, 66, 0.85);
-}
-
-.footer__row--grey {
-	padding: 25px 0;
-	background-color: rgba(55, 62, 66, 0.85);
-}
-
-.footer__row--green {
-	background-color: rgba(108, 156, 90, 0.85);
-	padding: 10px 0;
-	justify-content: center;
-}
 @import 'common/triangle';
 @import 'common/index';
 @import 'common/about';
 @import 'common/blog';
 @import 'common/portfolio';
+@import 'common/footer';
+
+@import 'common/media';

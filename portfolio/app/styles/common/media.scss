@@ -1,0 +1,63 @@
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+
+}
+
+
+@media only screen and (max-width : 840px){
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+    .autorization {
+        width: 350px;
+    }
+
+}
+
+@media only screen and (max-width : 600px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    .copyrating__line--name {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .copyrating__line--name::after {
+        display: none;
+    }
+    .start .h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width : 400px){
+    .autorization {
+        max-width: 300px;
+        min-width: 0;
+    }
+    .start__btn-autorization {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+}

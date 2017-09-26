@@ -5,18 +5,18 @@
 .start__btn-autorization {
 	position: absolute;
 	top: 20px;
-	right: 100px;
+	right: 20px;
 }
 .start__autorization {
 	background: url('../images/water.jpg') no-repeat;
 	background-size: cover;
 	min-width: 100vw;
-	min-height: 100vh;
+	height: 100vh;
+	min-height: 570px;
 	padding-bottom: 20px;
 }
 .autorization {
-	min-width: 380px;
-	max-width: 380px;
+	width: 380px;
 	text-align: center;
 	background: rgba(18, 38, 32, .6);
 	border-radius: 5px;
@@ -67,24 +67,28 @@
 .input--checkbox:checked + .label:after {
 	content: url('../images/icons/check.svg');
 	position: absolute;
+	line-height: 23px;
 	width: 20px;
 	height: 20px;
-	top: -2px;
+	top: -1px;
 	left: -30px;
 	background-color: $green;
 	border-radius: 2px;
+	outline: none;
 }
 .input--radio:checked + .label:after {
-	content: '';
+	content: url('../images/icons/circle.svg');
+	line-height: 17px;
 	position: absolute;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 100%;
 	border-radius: 100%;
-	top: 8px;
-	left: -20px;
+	top: 4px;
+	left: -25px;
 	margin-left: -5px;
 	margin-top: -5px;
-	background-color: $green;;
+	background-color: white;
 }
 .input--radio:checked + .label {
 	color: $green;
