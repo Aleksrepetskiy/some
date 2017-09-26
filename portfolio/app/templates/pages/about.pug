@@ -5,10 +5,9 @@ block variables
 block content
     include ../common/header.pug
     section.section.about
+        div.bloc-decor
+            include ../common/triangle.pug
         div.about__left
-            div.about__triangle.about__triangle--left
-                svg.triangle.triangle_fill_white(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.006 1013.986")
-                    path(fill-rule="evenodd" clip-rule="evenodd" fill="#ebefe2" d="M0.01,0l899.997,159.008v854.979H0L0.01,0z")
             div.about__left-title
                 div.block-title Мои работы
                     div.title-bg__about
@@ -22,9 +21,6 @@ block content
                         p Я веб разработчик из Киева. Мне 32 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         div.about__right
-            div.about__triangle.about__triangle--right
-                svg.triangle.triangle_fill_beige(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875.331 1009.986")
-                    path(fill-rule="evenodd" clip-rule="evenodd" fill="#f4f5f0" d="M0,159.008L900.331,0l-0.005,1015.986H0V155.008z")
             div.about__right-title
                 div.block-subtitle Чем я могу быть вам полезен
             div.about__right-description.text-content

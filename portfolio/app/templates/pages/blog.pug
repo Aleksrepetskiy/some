@@ -5,13 +5,8 @@ block variables
 block content
     include ../common/header.pug
     section.section.blog
-        div.blog-decor
-            //- div.blog-decor__triang.blog-decor__triang--left
-            //-     svg.triangle.triangle_fill_white(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.006 1013.986")
-            //-         path(fill-rule="evenodd" clip-rule="evenodd" fill="#ebefe2" d="M0.01,0l899.997,159.008v854.979H0L0.01,0z")
-            //- div.blog-decor__triang.blog-decor__triang--right
-            //-     svg.triangle.triangle_fill_beige(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875.331 1009.986")
-            //-         path(fill-rule="evenodd" clip-rule="evenodd" fill="#f4f5f0" d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z")
+        div.bloc-decor
+            include ../common/triangle.pug
         div.blog__menu
             ul.articles__list
                 li.articles__item 

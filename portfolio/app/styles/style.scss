@@ -307,11 +307,6 @@ img {
 	text-transform: uppercase;
 	font-family: sansusWebissimo, sans-serif;
 }
-
-.triangle {
-	width: 100%;
-}
-
 .skills-row__list {
 	display: flex;
 }
@@ -527,6 +522,7 @@ blockquote {
 	padding: 10px 0;
 	justify-content: center;
 }
+@import 'common/triangle';
 @import 'common/index';
 @import 'common/about';
 @import 'common/blog';
