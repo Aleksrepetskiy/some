@@ -9,7 +9,7 @@ block content
             include ../common/triangle.pug
         div.about__left
             div.about__left-title
-                div.block-title Мои работы
+                div.block-title Обо мне
                     div.title-bg__about
             div.about__left-content
                 div.user-description
@@ -69,8 +69,6 @@ block content
                                                 .skill__title #{skill}
             
     section.section.map
-        .google-map
-            img(src="images/map.jpg", alt="" style="width:100%")
         .map__data
             .contacts
                 .contacts__title
@@ -89,4 +87,7 @@ block content
                                     svg(class=`contacts-row__icon contacts-row__icon--${item[0]}`)
                                        use(xlink:href=`images/icons/sprite.svg#${item[0]}`)
                                     .contacts-row__content.text #{item[1]}
+        .google-map
+            img(src="images/map.jpg", alt="")
+
     include ../common/footer.pug

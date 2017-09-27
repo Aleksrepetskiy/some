@@ -90,18 +90,14 @@ p {
 	font-weight: 400;
 	line-height: 66px;
 	text-transform: uppercase;
-	margin-bottom: 64px;
 	text-align: center;
 
 	&::after {
 		content: '';
 		display: block;
-		position: absolute;
-		left: 50%;
-		margin-left: -45px;
+		margin: 30px auto;
 		height: 3px;
 		width: 90px;
-		bottom: -29px;
 		background-color: $darkgray;
 	}
 }
@@ -306,6 +302,8 @@ img {
 }
 .skills-row__list {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .skills-list__item+.skills-list__item {
@@ -340,7 +338,7 @@ img {
 }
 
 .skills-row__item + .skills-row__item {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .skill__circle {
@@ -382,7 +380,7 @@ blockquote {
 }
 
 .nav__item+.nav__item {
-	margin-left: 35px;
+	margin-left: 20px;
 }
 
 .nav__link {
@@ -399,7 +397,7 @@ blockquote {
 .title-bg__about{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 16%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     background-image: url(../images/icons/about_header.svg);

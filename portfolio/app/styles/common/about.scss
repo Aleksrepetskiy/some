@@ -48,6 +48,7 @@
 .about {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 .about__left, .about__right {
     position: relative;
@@ -58,6 +59,7 @@
 }
 .about__left {
     background-color: #ebefe2;
+    flex-wrap: wrap;
 }
 .about__right {
     background-color: #f4f5f0;
@@ -136,7 +138,7 @@
 }
 .map__data {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgba(244, 245, 240, 0.85);
