@@ -107,6 +107,23 @@
         padding: 0 20px;
         box-sizing: content-box;
     }
+    .blog__menu {
+        display: none;
+    }
+    .blog__articles {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .cont-blog {
+        display: flex;
+    }
+    .wrapper_blog {
+        min-width: 320px;
+    }
+    .push-menu {
+        
+    }
 }
 @media only screen and (max-width : 710px){
     .footer__row--grey {
