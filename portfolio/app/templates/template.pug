@@ -12,6 +12,7 @@ html
         link(rel="stylesheet", type="text/css", href="/styles/style-min.css")
         scripts(src="/js/common.js" defer)    
     body
-        block content
+        div(class=`wrapper ${wrapper}`)
+            block content
     
         

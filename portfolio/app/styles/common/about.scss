@@ -5,6 +5,12 @@
 	height: 100vh;
     position: relative;
 }
+.about .decor__triang--left {
+    fill: #ebefe2;
+}
+.about .decor__triang--right {
+    fill: #f4f5f0;
+}
 .hero__social {
 	position: absolute;
 	top: 30px;
@@ -42,7 +48,7 @@
 .about {
     display: flex;
     position: relative;
-    padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 .about__left, .about__right {
     position: relative;
@@ -53,10 +59,12 @@
 }
 .about__left {
     background-color: #ebefe2;
+    flex-wrap: wrap;
 }
 .about__right {
     background-color: #f4f5f0;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 .about__triangle {
     position: absolute;
@@ -78,20 +86,6 @@
 .about__left-title {
     position: relative;
 }
-.about__title-bg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    background-image: url(../images/icons/about_header.svg);
-    background-size: cover;
-    width: 401px;
-    height: 142px;
-    opacity: .1;
-}
-
-
 .user-description__img {
     margin-bottom: 30px;
 }
@@ -144,7 +138,7 @@
 }
 .map__data {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgba(244, 245, 240, 0.85);
