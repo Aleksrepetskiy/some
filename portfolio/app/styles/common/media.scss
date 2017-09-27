@@ -54,6 +54,9 @@
     .skills-row__item+.skills-row__item {
         margin-left: 10px;
     }
+    .portfolio__content {
+        padding-bottom: 270px;
+    }
 }
 @media only screen and (max-width : 1042px){
     .skills-row__item+.skills-row__item {
@@ -86,6 +89,11 @@
 @media only screen and (max-width : 768px){
     .autorization {
         width: 350px;
+    }
+    .block-title {
+        font-size: 49px;
+        font-weight: 400;
+        line-height: 52px;
     }
     .triangle {
         max-height: 65px;
@@ -121,9 +129,10 @@
     .wrapper_blog {
         min-width: 320px;
     }
-    .push-menu {
-        
+    .portfolio__content {
+        padding-bottom: 320px;
     }
+
 }
 @media only screen and (max-width : 710px){
     .footer__row--grey {
@@ -157,6 +166,24 @@
     }
     .start .h2 {
         font-size: 30px;
+    }
+    .portfolio__content {
+        padding-bottom: 400px;
+    }
+    .rewiews {
+        flex-wrap: wrap;
+    }
+    .rewiew {
+        width: 100%;
+    }
+    .rewiew+.rewiew {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .title-bg__works {
+        max-width: 250px;
+        height: 87px;
+        top: 32%;
     }
 
 }
