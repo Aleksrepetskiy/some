@@ -23,6 +23,7 @@
         margin-left: 20px;
     }
     .google-map {
+        overflow: hidden;
         height: 963px;
     }
     .map__data {
@@ -169,6 +170,9 @@
         &::after{
             margin: 20px auto;
         }
+    }
+    .contacts {
+        min-width: 0;
     }
 
     .title-bg__about {
