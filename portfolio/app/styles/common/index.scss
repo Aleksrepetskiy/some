@@ -6,16 +6,17 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	z-index: 1;
 }
 .start__autorization {
-	background: url('../images/water.jpg') no-repeat;
+	// background: url('../images/water.jpg') no-repeat;
 	background-size: cover;
 	min-width: 100vw;
 	height: 100vh;
 	min-height: 570px;
 	padding-bottom: 20px;
 }
-.autorization {
+.autorization, .autorization-registr {
 	width: 380px;
 	text-align: center;
 	background: rgba(18, 38, 32, .6);
@@ -159,4 +160,26 @@
 	bottom: 20px;
 	left: 0;
 	right: 0;
+}
+.start__autorization {
+	perspective: 1000;
+}
+.autorization, .autorization-registr {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.autorization-registr {
+	transform: rotateY(180deg);
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	width: 380px;
+	height: 440px;
+}
+.flipper.active{
+	transform: rotateY(180deg);
 }
